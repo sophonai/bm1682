@@ -1,7 +1,7 @@
 # AIBOX
 
 
-- [版本/VERSION](README.md)
+- [版本](README.md)
 
 
 
