@@ -1,4 +1,4 @@
-# AIBOX API
+# AIBOX
 
 
 - [版本/VERSION](README.md)
