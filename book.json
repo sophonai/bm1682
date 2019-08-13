@@ -3,7 +3,9 @@
     	"expandable-chapters",
 	"auto-scroll-table",
 	"pageview-count",
-	"popup"
+	"popup",
+	"expandable-chapters-small",
+	"back-to-top-button"
   ],
    "pluginsConfig": {
         "image-captions": {
