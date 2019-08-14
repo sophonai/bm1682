@@ -15,7 +15,7 @@
 | permission_name       | string  |                                     | 必选 | 权限组名称                                                   |                                   |
 | user_recursive_delete | boolean |                                     | 必选 | 默认为false，删除权限组，保留人员。如果为True，删除权限组的同时，把人员，人脸一起删除 |                                   |
 
-​        **返回信息：**
+**返回信息：**
 
 请求成功
 

@@ -23,8 +23,8 @@
 | 一级参数 | 二级参数    | 类型   | 描述                                                         |
 | :------- | :---------- | :----- | :----------------------------------------------------------- |
 | data     | group_name  | string | 分组名称                                                     |
-| data     | message     | string | 返回信息                                                     |
-| data     | identity_id | list   | 默认为false，不返回该组的identity_id如果为true，返回该组的identity_id |
+|          | message     | string | 返回信息                                                     |
+|          | identity_id | list   | 默认为false，不返回该组的identity_id如果为true，返回该组的identity_id |
 
 请求失败
 

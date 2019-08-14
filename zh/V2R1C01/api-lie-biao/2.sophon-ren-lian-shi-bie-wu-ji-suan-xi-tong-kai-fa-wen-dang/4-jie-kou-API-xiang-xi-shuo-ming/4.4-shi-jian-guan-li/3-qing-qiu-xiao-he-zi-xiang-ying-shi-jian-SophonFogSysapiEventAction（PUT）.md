@@ -26,7 +26,7 @@
 | 一级参数 | 二级参数    | 类型   | 描述           |
 | :------- | :---------- | :----- | :------------- |
 | data     | message     | string | 消息           |
-| data     | action_mode | string | 设置的动作模式 |
+|          | action_mode | string | 设置的动作模式 |
 
 请求失败
 
