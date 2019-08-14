@@ -1,4 +1,4 @@
-#### 获取状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（GET）
+# 获取状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（GET）
 
 **功能描述**
 
@@ -18,11 +18,11 @@
 
 
 
-| 一级参数 | 二级参数           | 类型   | 描述                                                         |
-| :------- | :----------------- | :----- | :----------------------------------------------------------- |
-| data     |                    | string | 消息                                                         |
-|          | monitor_server_url | string | 状态管理服务器地址，类似[http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogStatus |
-|          | reported_peroid    | int    | 上报状态的周期                                               |
+| 一级参数 | 二级参数           | 类型   | <font color="#dd0000">默认值</font> | 描述                                                         | <font color="#dd0000">举例</font> |
+| :------- | :----------------- | :----- | ----------------------------------- | :----------------------------------------------------------- | --------------------------------- |
+| data     |                    | string |                                     | 消息                                                         |                                   |
+|          | monitor_server_url | string |                                     | 状态管理服务器地址，类似[http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogStatus |                                   |
+|          | reported_peroid    | int    |                                     | 上报状态的周期                                               |                                   |
 
 ​       请求失败
 

@@ -1,4 +1,4 @@
-#### 获取历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl（GET）
+# 获取历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl（GET）
 
 **功能描述**
 
@@ -16,13 +16,13 @@
 
 请求成功
 
-| 一级参数 | 二级参数                 | 类型   | 选择 | 描述                                                         |
-| :------- | :----------------------- | :----- | :--- | :----------------------------------------------------------- |
-| data     |                          | dict   |      |                                                              |
-|          | history_upload_event_url | list   | 必选 | 历史[事件服务器地址列表，格式： [https/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)[http\]://ip:port/api](http://ipport/)[ 。举例：http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogHistoryEvent |
-|          | history_need_reg_pic     | bool   | 必须 | 是否需要上传注册照片                                         |
-|          | content-type             | string | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data] |
-|          | reported_peroid          | int    | 必选 | 上报状态的周期                                               |
+| 一级参数 | 二级参数                 | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| :------- | :----------------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
+| data     |                          | dict   |                                     |      |                                                              |                                   |
+|          | history_upload_event_url | list   |                                     | 必选 | 历史[事件服务器地址列表，格式： [https/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)[http\]://ip:port/api](http://ipport/)[ 。举例：http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogHistoryEvent |                                   |
+|          | history_need_reg_pic     | bool   |                                     | 必须 | 是否需要上传注册照片                                         |                                   |
+|          | content-type             | string |                                     | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data] |                                   |
+|          | reported_peroid          | int    |                                     | 必选 | 上报状态的周期                                               |                                   |
 
 请求失败
 

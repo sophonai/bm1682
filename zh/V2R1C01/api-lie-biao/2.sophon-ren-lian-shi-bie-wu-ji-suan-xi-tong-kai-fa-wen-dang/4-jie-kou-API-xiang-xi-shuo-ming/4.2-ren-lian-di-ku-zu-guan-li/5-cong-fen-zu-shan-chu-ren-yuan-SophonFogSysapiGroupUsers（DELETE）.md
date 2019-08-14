@@ -1,4 +1,4 @@
-#### 从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）
+# 从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）
 
 **功能描述**
 
@@ -10,11 +10,11 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| 参数             | 类型    | 选择 | 描述                                                         |
-| :--------------- | :------ | :--- | :----------------------------------------------------------- |
-| group_name       | string  | 必选 | 分组名称                                                     |
-| identity_id      | list    | 必选 | 用户id列表[["123345","23455"](https://info.bitmain.vip:8443/pages/createpage.action?spaceKey=AIBOX&title="123345"%2C"23455"&linkCreation=true&fromPageId=59841178)] |
-| with_identity_id | boolean | 可选 | 默认为false，不返回该组的identity_id如果为true，返回该组的identity_id |
+| 参数             | 类型    | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| :--------------- | :------ | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
+| group_name       | string  |                                     | 必选 | 分组名称                                                     |                                   |
+| identity_id      | list    |                                     | 必选 | 用户id列表[["123345","23455"](https://info.bitmain.vip:8443/pages/createpage.action?spaceKey=AIBOX&title="123345"%2C"23455"&linkCreation=true&fromPageId=59841178)] |                                   |
+| with_identity_id | boolean |                                     | 可选 | 默认为false，不返回该组的identity_id如果为true，返回该组的identity_id |                                   |
 
 **返回信息：**
 

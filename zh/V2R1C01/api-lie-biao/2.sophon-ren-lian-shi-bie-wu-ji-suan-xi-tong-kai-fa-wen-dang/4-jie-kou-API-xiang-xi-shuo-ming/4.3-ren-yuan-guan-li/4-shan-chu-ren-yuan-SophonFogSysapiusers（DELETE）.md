@@ -1,4 +1,4 @@
-#### 删除人员/SophonFogSys/api/users（DELETE）
+# 删除人员/SophonFogSys/api/users（DELETE）
 
 **功能描述**
 
@@ -10,11 +10,11 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| Index | 参数        | 类型   | 选择 | 描述   |
-| :---- | :---------- | :----- | :--- | :----- |
-| 1     | identity_id | string | 必选 | 人员ID |
+| Index | 参数        | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述   | <font color="#dd0000">举例</font> |
+| :---- | :---------- | :----- | ----------------------------------- | :--- | :----- | --------------------------------- |
+| 1     | identity_id | string |                                     | 必选 | 人员ID |                                   |
 
-​        **返回信息：**
+**返回信息：**
 
 请求成功
 
@@ -36,4 +36,4 @@ Postman 示例调用:
 
 https://documenter.getpostman.com/view/3306589/RznFoxqf#b1d1d4eb-b09d-5408-78f3-c7c306867937
 
-####  
+#### 

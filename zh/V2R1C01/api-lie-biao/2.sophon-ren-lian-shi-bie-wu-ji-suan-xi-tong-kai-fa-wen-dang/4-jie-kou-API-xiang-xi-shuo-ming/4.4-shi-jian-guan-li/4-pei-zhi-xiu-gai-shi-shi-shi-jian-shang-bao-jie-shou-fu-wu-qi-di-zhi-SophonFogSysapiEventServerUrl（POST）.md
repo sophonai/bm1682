@@ -1,4 +1,4 @@
-#### 配置/修改实时事件上报接收服务器地址/SophonFogSys/api/EventServerUrl（POST）
+# 配置/修改实时事件上报接收服务器地址/SophonFogSys/api/EventServerUrl（POST）
 
 **功能描述**
 
@@ -10,13 +10,13 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| 参数              | 类型   | 选择 | 描述                                                         |
-| :---------------- | :----- | :--- | :----------------------------------------------------------- |
-| event_server_url  | list   | 必选 | 列表，事件服务器地址列表，格式： [https/[http\]://ip:port/api](http://ipport/) 。举例： http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent |
-| real_need_reg_pic | bool   | 可选 | 配置是否需要上传注册的图片，默认为true,需要上传注册的图片    |
-| content-type      | string | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data] |
+| 参数              | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| :---------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
+| event_server_url  | list   |                                     | 必选 | 列表，事件服务器地址列表，格式： [https/[http\]://ip:port/api](http://ipport/) 。举例： http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent |                                   |
+| real_need_reg_pic | bool   |                                     | 可选 | 配置是否需要上传注册的图片，默认为true,需要上传注册的图片    |                                   |
+| content-type      | string |                                     | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data] |                                   |
 
-​        **返回信息：**
+**返回信息：**
 
 请求成功
 

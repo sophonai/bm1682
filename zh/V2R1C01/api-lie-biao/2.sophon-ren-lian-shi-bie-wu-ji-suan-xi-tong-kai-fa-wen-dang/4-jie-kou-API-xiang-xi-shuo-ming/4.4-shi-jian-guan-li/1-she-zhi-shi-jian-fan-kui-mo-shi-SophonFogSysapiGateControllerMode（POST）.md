@@ -1,4 +1,4 @@
-#### 设置事件反馈模式/SophonFogSys/api/GateControllerMode（POST）
+# 设置事件反馈模式/SophonFogSys/api/GateControllerMode（POST）
 
 **功能描述**
 
@@ -10,11 +10,11 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| Index | 参数            | 类型   | 选择 | 描述                                             |
-| :---- | :-------------- | :----- | :--- | :----------------------------------------------- |
-| 1     | controller_mode | string | 必选 | “opendoor/alarm/avoid/...”, default is opendoor. |
+| Index | 参数            | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                             | <font color="#dd0000">举例</font> |
+| :---- | :-------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------- | --------------------------------- |
+| 1     | controller_mode | string |                                     | 必选 | “opendoor/alarm/avoid/...”, default is opendoor. |                                   |
 
-​        **返回信息：**
+**返回信息：**
 
 请求成功
 
