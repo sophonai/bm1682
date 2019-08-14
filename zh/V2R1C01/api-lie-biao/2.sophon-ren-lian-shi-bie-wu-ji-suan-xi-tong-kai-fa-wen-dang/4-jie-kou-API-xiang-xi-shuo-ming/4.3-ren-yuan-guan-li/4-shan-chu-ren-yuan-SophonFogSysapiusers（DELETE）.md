@@ -21,8 +21,8 @@
 | 一级参数 | 二级参数    | 类型   | 描述                       |
 | :------- | :---------- | :----- | :------------------------- |
 | data     | identity_id | string | 用户id                     |
-| data     | group_name  | list   | 从哪些之前绑定的分组中移除 |
-| data     | message     | string | 消息                       |
+|          | group_name  | list   | 从哪些之前绑定的分组中移除 |
+|          | message     | string | 消息                       |
 
 请求失败
 
