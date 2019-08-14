@@ -82,14 +82,14 @@
   - [3.客户支持文档](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/README.md)
     
     - [1.人脸识别系统闸机门禁机模式快速配置指南](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/README.md)
-    - [1.1系统网络图](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/1.xi-tong-wang-luo.md)
-      
-    - [1.2闸机和门禁机设置](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/2.zha-ji-he-men-jin-ji-she-zhi.md)
-      
-    - [1.3SE3 AI迷你机设置](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/3.AI-Mini-ji-she-zhi.md)
-      
-    - [1.4系统功能验证](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/4.xi-tong-gong-neng-yan-zheng.md)
-      
+    
+       - [1.1系统网络图](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/1.xi-tong-wang-luo.md)
+    
+       - [1.2闸机和门禁机设置](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/2.zha-ji-he-men-jin-ji-she-zhi.md)
+    
+       - [1.3SE3 AI迷你机设置](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/3.AI-Mini-ji-she-zhi.md)
+    
+       - [1.4系统功能验证](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/4.xi-tong-gong-neng-yan-zheng.md)
     - [2.人脸识别迎宾系统快速设置指南](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/README.md)
        - [2.1迎宾机系统组网图](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/1.ying-bin-ji-xi-tong-zu-wang-tu.md)
        - [2.2迎宾机系统基本功能](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/2.ying-bin-ji-xi-tong-ji-ben-gong-neng.md)
