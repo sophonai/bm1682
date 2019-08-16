@@ -20,7 +20,6 @@
 | score         |             | float  |                                     | 必选 | 比对的分数                                                   |                                   |
 | ext_data      |             | dict   |                                     | 必选 | 拓展数据字段，可迭代添加                                     |                                   |
 |               | device_ip   | string |                                     | 可选 | 设备ip                                                       |                                   |
-|               | ep_id       | string |                                     | 可选 | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 |                                   |
 |               | spot_pic    | base64 |                                     | 可选 | 现场照片                                                     |                                   |
 |               | person_type | int    |                                     | 可选 | 1:员工（默认为员工，包括这个字段不存在的情况）<br />2: 访客<br />3: 黑名单<br />4：陌生人<br />5: VIP |                                   |
 |               | device_type | string |                                     | 可选 | 0：闸机，<br />1：抓拍机<br />2：IPC 静态<br />3：IPC 动态<br />4：门禁 |                                   |
