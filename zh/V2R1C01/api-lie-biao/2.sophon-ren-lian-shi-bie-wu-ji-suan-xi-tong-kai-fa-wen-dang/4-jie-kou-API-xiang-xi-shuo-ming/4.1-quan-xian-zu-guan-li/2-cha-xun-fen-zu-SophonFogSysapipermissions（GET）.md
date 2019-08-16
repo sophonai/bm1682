@@ -12,7 +12,15 @@
 
 | 参数            | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                               | <font color="#dd0000">举例</font> |
 | :-------------- | :----- | ----------------------------------- | :--- | :------------------------------------------------- | --------------------------------- |
-| permission_name | string |                                     | 可选 | 权限组名称，如果该参数没有设置，则返回所有的分组。 |                                   |
+| permission_name | string | 空                                  | 可选 | 权限组名称，如果该参数没有设置，则返回所有的分组。 | ”测试组“                          |
+
+请求示例：
+
+```json
+请求url: http://192.168.1.180:5555/SophonFogSys/api/permissions
+```
+
+
 
 **返回信息：**
 
@@ -23,7 +31,22 @@
 | data     |                  |             | dict   |                                                              |
 |          | permissions_list |             | list   | "permissions_list": [  {  "description": "负责系统软件开发", "name": "10391" },  {  "description": "负责系统软件开发", "name": "软件开发一部" }  ] |
 |          |                  | name        | string | 权限组名称                                                   |
-|          |                  | description | string | 权限组信息，内容可为‘’                                       |
+|          |                  | description | string | 权限组信息，内容可为‘”“，即空字符串                          |
+
+请求成功示例：
+
+```json
+{
+    "data": {
+        "permissions_list": [
+            {
+                "name": "测试组",
+                "description":"该权限组为测试权限组"
+            }
+        ]
+    }
+}
+```
 
 请求失败
 
@@ -32,7 +55,3 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-
-Postman 示例调用：
-
-https://documenter.getpostman.com/view/3306589/RznFoxqf#b1a37880-d498-ff0a-d54b-9897fc1a74d0

@@ -8,12 +8,23 @@
 
 调用方法: PUT
 
-**请求参数（JSON格式，form-data格式）**
+**请求参数（JSON格式）**
 
 | 参数            | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                      | <font color="#dd0000">举例</font> |
 | :-------------- | :----- | ----------------------------------- | :--- | :-------------------------------------------------------- | --------------------------------- |
-| permission_name | string |                                     | 必选 | 权限组名称，不支持在字符串中间包含“,”，代码暂时不做校验。 |                                   |
-| description     | string |                                     | 必选 | 权限组信息，可以为 “”                                     |                                   |
+| permission_name | string | 无                                  | 必选 | 权限组名称，不支持在字符串中间包含“,”，代码暂时不做校验。 | ”测试组“                          |
+| description     | string | 无                                  | 必选 | 权限组信息，可以为 “”                                     | ”该权限组为测试权限组“            |
+
+请求示例：
+
+```json
+请求url: http://192.168.1.180:5555/SophonFogSys/api/permissions?
+请求body:
+        {
+            "permission_name":"测试组",
+            "description":"该权限组为测试权限组"
+        }
+```
 
 **返回信息：**
 
@@ -26,6 +37,19 @@
 |          |          | name        | string | 权限组名称             |
 |          |          | description | string | 权限组信息，内容可为‘’ |
 
+请求成功示例：
+
+```json
+{
+    "data": {
+        "info": {
+            "description": "该权限组为测试权限组",
+            "name": "测试组"
+        }
+    }
+}
+```
+
 请求失败
 
 | 一级参数 | 二级参数 | 类型   | 描述       |
@@ -33,7 +57,3 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-
-Postman 示例调用：
-
-https://documenter.getpostman.com/view/3306589/RznFoxqf#e1bbd0ad-8275-6bd5-9c35-a977f9613ed7

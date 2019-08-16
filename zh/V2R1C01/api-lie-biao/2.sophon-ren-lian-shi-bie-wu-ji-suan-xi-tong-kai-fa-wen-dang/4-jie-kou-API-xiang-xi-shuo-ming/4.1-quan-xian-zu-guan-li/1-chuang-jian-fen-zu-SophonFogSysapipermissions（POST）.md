@@ -8,23 +8,48 @@
 
 调用方法: POST
 
-**请求参数（JSON格式，form-data格式）**
+**请求参数（JSON格式）**
 
 | 参数            | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
 | :-------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
-| permission_name | string |                                     | 必选 | 权限组名称，内容不可为‘’,可支持中文。不支持在字符串中间包含“,”，代码暂时不做校验。 |                                   |
-| description     | string |                                     | 必选 | 权限组信息，内容可为‘’                                       |                                   |
+| permission_name | string | 无                                  | 必选 | 权限组名称，内容不可为‘’,可支持中文。不支持在字符串中间包含“,”，代码暂时不做校验。 | ”测试组“                          |
+| description     | string | 无                                  | 必选 | 权限组信息，内容可为‘”“, 即空字符串                          | ”该权限组为测试权限组“            |
+| info            | dict   | 无                                  | 可选 | 权限组其他内容添加, 不能在info中携带name和description字段    |                                   |
 
-​        **返回信息：**
+请求示例：
+
+```json
+请求url: http://192.168.1.180:5555/SophonFogSys/api/permissions
+请求body:
+        {
+            "permission_name":"测试组",
+            "description":"该权限组为测试权限组"
+        }
+```
+
+**返回信息：**
 
 请求成功
 
-| 一级参数 | 二级参数 | 三级参数    | 类型   | 描述                   |
-| :------- | :------- | :---------- | :----- | :--------------------- |
-| data     |          |             | dict   |                        |
-|          | info     |             | dict   |                        |
-|          |          | name        | string | 权限组名称             |
-|          |          | description | string | 权限组信息，内容可为‘’ |
+| 一级参数 | 二级参数 | 三级参数    | 类型   | 描述                              |
+| :------- | :------- | :---------- | :----- | :-------------------------------- |
+| data     |          |             | dict   |                                   |
+|          | info     |             | dict   |                                   |
+|          |          | name        | string | 权限组名称                        |
+|          |          | description | string | 权限组信息，内容可为”“， 即空符串 |
+
+请求成功示例：
+
+```json
+{
+    "data": {
+        "info": {
+            "name": "测试组",
+            "description": "该权限组为测试权限组"
+        }
+    }
+}
+```
 
 请求失败
 
@@ -33,7 +58,3 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-
-Postman 示例调用：
-
-https://documenter.getpostman.com/view/3306589/RznFoxqf#711ec4ce-4a46-84ba-90f5-c98f63e1adbe

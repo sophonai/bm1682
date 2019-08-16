@@ -8,11 +8,21 @@
 
 调用方法: DELETE
 
-**请求参数（JSON格式，form-data格式）**
+**请求参数（JSON格式）**
 
-| Index | 参数        | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述   | <font color="#dd0000">举例</font> |
-| :---- | :---------- | :----- | ----------------------------------- | :--- | :----- | --------------------------------- |
-| 1     | identity_id | string |                                     | 必选 | 人员ID |                                   |
+| 参数        | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述   | <font color="#dd0000">举例</font> |
+| :---------- | :----- | ----------------------------------- | :--- | :----- | --------------------------------- |
+| identity_id | string | 无                                  | 必选 | 人员ID | “888888”                          |
+
+请求示例：
+
+```json
+请求url: http://192.168.1.66:5555/SophonFogSys/api/users
+请求body:
+	{
+		"identity_id":"888888"
+	}
+```
 
 **返回信息：**
 
@@ -24,6 +34,20 @@
 |          | group_name  | list   | 从哪些之前绑定的分组中移除 |
 |          | message     | string | 消息                       |
 
+请求成功示例：
+
+```json
+{
+    "data": {
+        "group_name": [
+            "default_group"
+        ],
+        "identity_id": "888888",
+        "message": "have remove from group success"
+    }
+}
+```
+
 请求失败
 
 | 一级参数 | 二级参数 | 类型   | 描述       |
@@ -31,9 +55,3 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-
-Postman 示例调用:
-
-https://documenter.getpostman.com/view/3306589/RznFoxqf#b1d1d4eb-b09d-5408-78f3-c7c306867937
-
-#### 

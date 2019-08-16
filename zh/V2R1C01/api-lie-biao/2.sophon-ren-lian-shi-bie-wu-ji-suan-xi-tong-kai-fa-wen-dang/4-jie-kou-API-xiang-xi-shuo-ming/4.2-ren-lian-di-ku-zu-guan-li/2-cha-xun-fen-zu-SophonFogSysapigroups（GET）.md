@@ -12,7 +12,13 @@
 
 | 参数       | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                             | <font color="#dd0000">举例</font> |
 | :--------- | :----- | ----------------------------------- | :--- | :----------------------------------------------- | --------------------------------- |
-| group_name | string |                                     | 可选 | 分组名称，如果该参数没有设置，则返回所有的分组。 |                                   |
+| group_name | string | 空                                  | 可选 | 分组名称，如果该参数没有设置，则返回所有的分组。 |                                   |
+
+请求示例：
+
+```json
+请求url: http://192.168.1.180:5555/SophonFogSys/api/groups?
+```
 
 **返回信息：**
 
@@ -25,6 +31,22 @@
 |          |             | name        | string | 分组名称                                                     |
 |          |             | description | string | 分组信息，内容可为‘’                                         |
 
+请求成功示例：
+
+```json
+{
+    "data": {
+        "groups_list": [
+            
+            {
+                "name": "default_group"，
+                "description": "默认比对用户组"
+            }
+        ]
+    }
+}
+```
+
 请求失败
 
 | 一级参数 | 二级参数 | 类型   | 描述       |
@@ -32,7 +54,3 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-
-Postman 示例调用：
-
-https://documenter.getpostman.com/view/3306589/RznFoxqf#b1a37880-d498-ff0a-d54b-9897fc1a74d0
