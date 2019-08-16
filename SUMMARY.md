@@ -28,9 +28,9 @@
     - [6.向管理平台获取信息的接口定义](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/6.-xiang-guan-li-ping-tai-huo-qu-xin-xi-de-jie-kou-ding-yi/README.md)
       - [6.1获取用户详细信息的接口](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/6.-xiang-guan-li-ping-tai-huo-qu-xin-xi-de-jie-kou-ding-yi/6.1-huo-qu-yong-hu-xiang-xi-xin-xi-de-jie-kou.md)
     - [7.设备上报信息的接口规范](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
-      - [7.1实时事件上报内容](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
-      - [7.2历史事件上报内容](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-li-shi-shi-jian-shang-bao-nei-rong.md)
-      - [7.3设备状态上报内容](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.3-she-bei-zhuang-tai-shang-bao-nei-rong.md)
+      - [7.1实时事件上报内容](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+      - [7.2历史事件上报内容](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - [7.3设备状态上报内容](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
       - [7.4设备操作事件上报](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.4-she-bei-cao-zuo-shi-jian-shang-bao.md)
     - [8.云平台配置](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/8.-yun-ping-tai-pei-zhi/README.md)
       - [8.1小盒子唯一授权标识字段](zh/V2R1C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/8.-yun-ping-tai-pei-zhi/8.1-xiao-he-zi-wei-yi-shou-quan-biao-shi-zi-duan/README.md)
@@ -80,7 +80,6 @@
         - [4.5.4清空数据/SophonFogSys/api/WipeData（POST）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/4-qing-kong-shu-ju-SophonFogSysapiWipeData（POST）.md)
     
   - [3.客户支持文档](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/README.md)
-    
     - [1.人脸识别系统闸机门禁机模式快速配置指南](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/README.md)
     
        - [1.1系统网络图](zh/V2R1C01/api-lie-biao/3.ke-hu-zhi-chi/1.zha-ji-men-jin-ji-mo-shi-kuai-su-pei-zhi-zhi-nan/1.xi-tong-wang-luo.md)
