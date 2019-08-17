@@ -26,7 +26,7 @@
 请求body:
 	{
   "info":{"name":"小明","type":1,"aaa":1,"permission_ids":["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"]},
-  "identity_id":"888888",
+  "identity_id":"001",
   "reg_photo":""
 	
 }
@@ -56,7 +56,7 @@
         "group_name": [
             "default_group"
         ],
-        "identity_id": "888888",
+        "identity_id": "001",
         "image_id": "8f5d7b5a-d5da-4b3f-bf46-5830d412ba5e",
         "info": {
             "description": "",
@@ -66,7 +66,7 @@
                 "bb982244-ce4e-469d-ab5f-34314dd0c09a"
             ],
             "type": 1,
-            "user_id": "888888",
+            "user_id": "001",
    
         }
     }

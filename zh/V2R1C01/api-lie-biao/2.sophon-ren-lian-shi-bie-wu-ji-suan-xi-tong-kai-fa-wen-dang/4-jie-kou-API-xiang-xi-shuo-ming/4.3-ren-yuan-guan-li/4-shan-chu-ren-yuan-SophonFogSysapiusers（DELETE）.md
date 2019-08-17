@@ -20,7 +20,7 @@
 请求url: http://192.168.1.66:5555/SophonFogSys/api/users
 请求body:
 	{
-		"identity_id":"888888"
+		"identity_id":"001"
 	}
 ```
 
@@ -42,7 +42,7 @@
         "group_name": [
             "default_group"
         ],
-        "identity_id": "888888",
+        "identity_id": "001",
         "message": "have remove from group success"
     }
 }
