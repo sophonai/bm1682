@@ -23,10 +23,33 @@ SE3 AI 迷你机会实时上报比对分数大于阈值的比对事件到管理�
 |               | spot_pic       | base64   | 可选     | 现场照片，迎宾机模式下不传                                   | "/9j/6QAEAAD/2wBD..."             |
 |               | person_type    | int      | **必选** | 1：员工（默认为员工，包括这个字段不存在的情况）<br />2：访客<br />3：黑名单<br />4：陌生人<br />5：VIP | 1                                 |
 |               | device_type    | string   | **必选** | 0：闸机 <br />1：抓拍机 <br />2：IPC 静态 <br />3：IPC 动态 <br />4：门禁 | 0                                 |
-|               | grab_fiqa_info | dict     | **必选** | 返回抓拍机得人脸质量检测结果，详细参考历史信息详情示例       |                                   |
-|               | box_fiqa_info  | dict     | **必选** | 返回AI BOX得人脸质量检测结果，详细参考历史信息详情示例(臻识抓拍机有效) |                                   |
+|               | grab_fiqa_info | dict     | **必选** | 其他设备模式内容为空（抓拍机模式下只有臻识抓拍机有效），返回抓拍机得人脸质量检测结果，详细请看示例 | {}                                |
+|               | box_fiqa_info  | dict     | **必选** | 其他设备模式内容为空(抓拍机模式有值)，返回AI BOX得人脸质量检测结果，详细请看示例 | {}                                |
 
+**返回信息：**
 
+```json
+{
+    "reg_pic":"",
+    "ext_data":{
+        "person_type":5,
+        "grab_fiqa_info":{
+
+        },
+        "device_ip":"192.168.1.243",
+        "box_fiqa_info":{
+
+        },
+        "device_type":"0",
+        "spot_pic":""
+    },
+    "identity_id":"666666",
+    "score":0.6231614351272583,
+    "timestamp":1566016554020,
+    "group_name":"default_group",
+    "identity_name":"黄一凡"
+}
+```
 
 可以使用小盒子附带的server来获取上传的事件。
 
