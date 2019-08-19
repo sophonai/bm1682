@@ -47,18 +47,27 @@
     - [3.Sophon人脸识别雾计算系统和云端交互方式](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
     - [4.接口API详细说明](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/README.md)
       - [4.1权限组管理](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/README.md)
+        
         - [4.1.1创建分组/SophonFogSys/api/permissions（POST）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+        
         - [4.1.2查询分组/SophonFogSys/api/permissions（GET）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
-        - [4.1.3删除分组/SophonFogSys/api/permissions（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
-        - [4.1.4更新分组/SophonFogSys/api/permissions（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        
+        - [4.1.3更新分组/SophonFogSys/api/permissions（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/3-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        
+        - [4.1.4删除分组/SophonFogSys/api/permissions（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.1-quan-xian-zu-guan-li/4-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+        
+          
       - [4.2人脸底库组管理](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/README.md)
+        
         - [4.2.1创建分组/SophonFogSys/api/groups（POST）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
         - [4.2.2查询分组/SophonFogSys/api/groups（GET）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
-        - [4.2.3删除分组/SophonFogSys/api/groups（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
-        - [4.2.4添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
-        - [4.2.5从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
-        - [4.2.6更新分组SophonFogSysapigroups（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [4.2.3更新分组SophonFogSysapigroups（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/3-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [4.2.4删除分组/SophonFogSys/api/groups（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/4-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+        - 
+        - [4.2.5添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/5-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+        - [4.2.6从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.2-ren-lian-di-ku-zu-guan-li/6-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
       - [4.3人员管理](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.3-ren-yuan-guan-li/README.md)
+        
         - [4.3.1创建人员SophonFogSys/api/users（POST）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
         - [4.3.2查询人员/SophonFogSys/api/users（GET）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
         - [4.3.3更新人员/SophonFogSys/api/users（PUT）](zh/V2R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
