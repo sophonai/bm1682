@@ -1,6 +1,6 @@
 # AIBOX
 
-- [版本2](README.md)
+- [版本](README.md)
 
 - [v2.2.1](zh/V2R2C01_README.md)
   - [SE3 AI迷你机说明书](zh/V2R2C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
