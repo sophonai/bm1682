@@ -1,6 +1,6 @@
 {
   "plugins": [
-    	"expandable-chapters",
+    "expandable-chapters",
 	"auto-scroll-table",
 	"pageview-count",
 	"popup",
