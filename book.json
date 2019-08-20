@@ -2,10 +2,7 @@
   "plugins": [
     "expandable-chapters",
 	"auto-scroll-table",
-	"pageview-count",
-	"popup",
 	"expandable-chapters-small",
-	"back-to-top-button"
   ],
    "pluginsConfig": {
         "image-captions": {

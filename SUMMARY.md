@@ -1,8 +1,8 @@
 # AIBOX
 
-- [版本](README.md)
+- [版本2](README.md)
 
-- [V2R2C01文档](zh/V2R2C01_README.md)
+- [v2.2.1](zh/V2R2C01_README.md)
   - [SE3 AI迷你机说明书](zh/V2R2C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
   - [系统配置指南](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
     - [网络摄像机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/wang-luo-she-xiang-ji-mo-shi/README.md)
