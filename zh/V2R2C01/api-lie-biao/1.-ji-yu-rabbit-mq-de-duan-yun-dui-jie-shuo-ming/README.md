@@ -1,4 +1,4 @@
-# <center>SE3管理协议</center>
+# <center>SE3盒子迷你机管理协议</center>
 
 1.版本说明
 
