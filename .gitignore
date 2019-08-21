@@ -1,3 +1,5 @@
 !.gitignore
-_book/
-.idea/
+_book
+.idea
+!/.idea/workspace.xml
+/.idea/
