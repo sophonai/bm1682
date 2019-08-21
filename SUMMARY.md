@@ -86,4 +86,4 @@
       - [迎宾机系统基本功能](zh/V2R2C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/2.ying-bin-ji-xi-tong-ji-ben-gong-neng.md)
       - [抓拍机设置](zh/V2R2C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/3.zhua-pai-ji-she-zhi.md)
       - [迎宾电视APK操作指南](zh/V2R2C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
-     
+    
