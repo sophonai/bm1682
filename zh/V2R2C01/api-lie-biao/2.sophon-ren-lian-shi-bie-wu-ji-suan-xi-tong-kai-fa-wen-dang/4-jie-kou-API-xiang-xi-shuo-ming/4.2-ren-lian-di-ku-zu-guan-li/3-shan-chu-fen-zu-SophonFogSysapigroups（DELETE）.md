@@ -1,4 +1,4 @@
-# 删除分组/SophonFogSys/api/groups（DELETE）
+# <center>删除分组/SophonFogSys/api/groups（DELETE）</center>
 
 **功能描述**
 

@@ -1,4 +1,4 @@
-# 配置/修改历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl
+# <center>配置/修改历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl</center>
 
 **功能描述**
 

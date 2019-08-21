@@ -1,4 +1,4 @@
-# 删除人员/SophonFogSys/api/users（DELETE）
+# <center>删除人员/SophonFogSys/api/users（DELETE）</center>
 
 **功能描述**
 

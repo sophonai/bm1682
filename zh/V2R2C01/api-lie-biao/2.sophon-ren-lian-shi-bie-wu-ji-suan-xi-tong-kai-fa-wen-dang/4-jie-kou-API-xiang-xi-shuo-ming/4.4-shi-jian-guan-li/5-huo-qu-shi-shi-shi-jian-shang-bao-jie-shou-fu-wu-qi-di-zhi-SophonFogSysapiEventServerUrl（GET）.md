@@ -1,4 +1,4 @@
-# 获取实时事件上报接收服务器地址/SophonFogSys/api/EventServerUrl（GET）
+# <center>获取实时事件上报接收服务器地址/SophonFogSys/api/EventServerUrl（GET）</center>
 
 **功能描述**
 

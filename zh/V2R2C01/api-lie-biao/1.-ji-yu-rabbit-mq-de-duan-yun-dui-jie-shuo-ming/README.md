@@ -1,4 +1,4 @@
-# 基于Rabbit MQ的端云对接说明
+# <center>基于Rabbit MQ的端云对接说明</center>
 
 1.版本说明
 

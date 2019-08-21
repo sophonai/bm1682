@@ -1,4 +1,4 @@
-# 设置事件反馈模式/SophonFogSys/api/GateControllerMode（POST）
+# <center>设置事件反馈模式/SophonFogSys/api/GateControllerMode（POST）</center>
 
 **功能描述**
 

@@ -1,4 +1,4 @@
-# 删除分组/SophonFogSys/api/permissions（DELETE）
+# <center>删除分组/SophonFogSys/api/permissions（DELETE）</center>
 
 **功能描述**
 

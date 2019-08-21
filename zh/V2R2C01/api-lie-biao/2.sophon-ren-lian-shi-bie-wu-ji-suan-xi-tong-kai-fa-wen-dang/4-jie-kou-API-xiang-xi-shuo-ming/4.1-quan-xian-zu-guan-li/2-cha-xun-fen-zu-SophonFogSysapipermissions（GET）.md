@@ -1,4 +1,4 @@
-# 查询分组/SophonFogSys/api/permissions（GET）
+# <center>查询分组/SophonFogSys/api/permissions（GET）</center>
 
 **功能描述**
 

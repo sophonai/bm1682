@@ -1,4 +1,4 @@
-# 请求小盒子响应事件/SophonFogSys/api/EventAction（PUT）
+# <center>请求小盒子响应事件/SophonFogSys/api/EventAction（PUT）</center>
 
 **功能描述**
 

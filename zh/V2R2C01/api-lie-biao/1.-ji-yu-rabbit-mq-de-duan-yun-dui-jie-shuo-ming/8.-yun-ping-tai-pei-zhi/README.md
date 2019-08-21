@@ -1,6 +1,4 @@
-# 云平台配置
-
-## 云平台配置
+# <center>云平台配置</center>
 
 以下为SE3 AI 迷你机内部配置，需要在部署的时候填上。无需与云平台交互。
 
@@ -18,7 +16,7 @@
 
 请求示例：
 
-```
+```json
 http://192.168.1.188:5555/SophonMQ/api/DevSno
 ```
 
@@ -31,7 +29,7 @@ http://192.168.1.188:5555/SophonMQ/api/DevSno
 
 成功返回：
 
-```
+```json
 {
     "data": {
         "response": "TJGSDX000120190726103455"
@@ -67,7 +65,7 @@ http://192.168.1.188:5555/SophonMQ/api/DevSno
 
 请求示例：
 
-```
+```json
 url: http://192.168.1.188:5555/SophonMQ/api/DevSno
 body:{
 	"dev_sno": "TJGSDX000120190726103455"
