@@ -9,9 +9,8 @@
     - [抓拍机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
   - [系统对接](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
     
-    - [对接管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
-    - [对接SE3盒子](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
-    - [基于Rabbit MQ的端云对接说明](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/README.md)
+    - [对接现有管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+    - [自建管理平台](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/README.md)
       - [基于Rabbit MQ的端云系统架构设计](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/1.-ji-yu-rabbit-mq-de-duan-yun-xi-tong-jia-gou-she-ji.md)
       
       - [MQ接口流程说明](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/README.md)
