@@ -1,2 +1,2 @@
-# <center>对接SE3盒子</center>
+# <center>SE3管理协议说明</center>
 
