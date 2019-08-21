@@ -2,9 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d031fd23-9feb-4a89-946f-1956ffee9733" name="Default Changelist" comment="ignore添加">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-auto-scroll-table/book/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-auto-scroll-table/book/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-auto-scroll-table/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-auto-scroll-table/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/assets/plugin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/assets/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-back-to-top-button/screenshots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/book/expandable-chapters-small.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/book/expandable-chapters-small.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters-small/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/book/expandable-chapters.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/book/expandable-chapters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-expandable-chapters/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/assets/plugin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/assets/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-pageview-count/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-popup/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-popup/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-popup/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gitbook-plugin-popup/package.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +191,28 @@
       <option name="project" value="LOCAL" />
       <updated>1566354615445</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="测试">
+      <created>1566355109610</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566355109610</updated>
+    </task>
+    <task id="LOCAL-00014" summary="测试">
+      <created>1566355130936</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1566355130936</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ignore添加">
+      <created>1566355156183</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566355156183</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -185,20 +241,21 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="框架调整" />
+    <MESSAGE value="测试" />
     <MESSAGE value="ignore添加" />
     <option name="LAST_COMMIT_MESSAGE" value="ignore添加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="24" key="CommitChangelistDialog2" />
     <state x="96" y="24" key="CommitChangelistDialog2/2880.1800" />
-    <state width="1419" height="206" key="GridCell.Tab.0.bottom" />
-    <state width="1419" height="206" key="GridCell.Tab.0.bottom/2880.1800" />
-    <state width="1419" height="206" key="GridCell.Tab.0.center" />
-    <state width="1419" height="206" key="GridCell.Tab.0.center/2880.1800" />
-    <state width="1419" height="206" key="GridCell.Tab.0.left" />
-    <state width="1419" height="206" key="GridCell.Tab.0.left/2880.1800" />
-    <state width="1419" height="206" key="GridCell.Tab.0.right" />
-    <state width="1419" height="206" key="GridCell.Tab.0.right/2880.1800" />
+    <state width="709" height="206" key="GridCell.Tab.0.bottom" />
+    <state width="709" height="206" key="GridCell.Tab.0.bottom/2880.1800" />
+    <state width="709" height="206" key="GridCell.Tab.0.center" />
+    <state width="709" height="206" key="GridCell.Tab.0.center/2880.1800" />
+    <state width="709" height="206" key="GridCell.Tab.0.left" />
+    <state width="709" height="206" key="GridCell.Tab.0.left/2880.1800" />
+    <state width="709" height="206" key="GridCell.Tab.0.right" />
+    <state width="709" height="206" key="GridCell.Tab.0.right/2880.1800" />
     <state x="404" y="150" key="Vcs.Push.Dialog" />
     <state x="404" y="150" key="Vcs.Push.Dialog/2880.1800" />
   </component>
