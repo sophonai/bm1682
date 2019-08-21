@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d031fd23-9feb-4a89-946f-1956ffee9733" name="Default Changelist" comment="">
+    <list default="true" id="d031fd23-9feb-4a89-946f-1956ffee9733" name="Default Changelist" comment="ignore添加">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +32,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AIBOX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566354278412</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ignore添加">
+      <created>1566354615445</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1566354615445</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -148,11 +185,20 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="框架调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="框架调整" />
+    <MESSAGE value="ignore添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore添加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="24" key="CommitChangelistDialog2" />
     <state x="96" y="24" key="CommitChangelistDialog2/2880.1800" />
+    <state width="1419" height="206" key="GridCell.Tab.0.bottom" />
+    <state width="1419" height="206" key="GridCell.Tab.0.bottom/2880.1800" />
+    <state width="1419" height="206" key="GridCell.Tab.0.center" />
+    <state width="1419" height="206" key="GridCell.Tab.0.center/2880.1800" />
+    <state width="1419" height="206" key="GridCell.Tab.0.left" />
+    <state width="1419" height="206" key="GridCell.Tab.0.left/2880.1800" />
+    <state width="1419" height="206" key="GridCell.Tab.0.right" />
+    <state width="1419" height="206" key="GridCell.Tab.0.right/2880.1800" />
     <state x="404" y="150" key="Vcs.Push.Dialog" />
     <state x="404" y="150" key="Vcs.Push.Dialog/2880.1800" />
   </component>
