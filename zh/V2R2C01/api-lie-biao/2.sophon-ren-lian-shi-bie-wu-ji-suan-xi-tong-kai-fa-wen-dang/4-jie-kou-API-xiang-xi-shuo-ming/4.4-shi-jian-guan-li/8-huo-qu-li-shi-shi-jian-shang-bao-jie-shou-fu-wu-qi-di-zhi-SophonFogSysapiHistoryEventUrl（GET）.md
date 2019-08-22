@@ -1,4 +1,4 @@
-# <center>获取历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl（GET）</center>
+# 获取历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl（GET）
 
 **功能描述**
 

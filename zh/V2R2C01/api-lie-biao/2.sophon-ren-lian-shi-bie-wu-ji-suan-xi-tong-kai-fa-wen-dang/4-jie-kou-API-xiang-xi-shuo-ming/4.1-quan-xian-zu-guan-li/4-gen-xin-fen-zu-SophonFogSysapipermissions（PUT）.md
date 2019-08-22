@@ -1,4 +1,4 @@
-# <center>更新分组/SophonFogSys/api/permissions（PUT）</center>
+# 更新分组/SophonFogSys/api/permissions（PUT）
 
 **功能描述**
 

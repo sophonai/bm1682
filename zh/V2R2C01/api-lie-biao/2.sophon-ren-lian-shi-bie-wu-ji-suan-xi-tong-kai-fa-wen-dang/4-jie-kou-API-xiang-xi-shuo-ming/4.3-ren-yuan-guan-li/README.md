@@ -1,4 +1,4 @@
-# <center>人员管理API概述</center>
+# 人员管理API概述
 
 - [创建人员SophonFogSys/api/users（POST）](1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
 - [查询人员/SophonFogSys/api/users（GET）](2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)

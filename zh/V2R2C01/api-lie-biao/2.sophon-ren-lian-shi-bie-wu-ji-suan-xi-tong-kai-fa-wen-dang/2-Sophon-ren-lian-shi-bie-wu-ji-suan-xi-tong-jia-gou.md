@@ -1,4 +1,4 @@
-# <center>Sophon人脸识别雾计算系统架构</center>
+# Sophon人脸识别雾计算系统架构
 
 Sophon人脸识别雾计算系统框架如下：
 

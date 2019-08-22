@@ -1,4 +1,4 @@
-# <center>查询分组/SophonFogSys/api/groups（GET）</center>
+# 查询分组/SophonFogSys/api/groups（GET）
 
 **功能描述**
 

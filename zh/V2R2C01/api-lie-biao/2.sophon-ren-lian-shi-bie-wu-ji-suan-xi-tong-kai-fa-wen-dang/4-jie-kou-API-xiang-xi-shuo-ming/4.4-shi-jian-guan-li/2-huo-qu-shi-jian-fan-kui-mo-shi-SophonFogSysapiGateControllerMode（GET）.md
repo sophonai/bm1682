@@ -1,4 +1,4 @@
-# <center>获取事件反馈模式/SophonFogSys/api/GateControllerMode（GET）</center>
+# 获取事件反馈模式/SophonFogSys/api/GateControllerMode（GET）
 
 **功能描述**
 

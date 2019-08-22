@@ -1,4 +1,4 @@
-# <center>清空数据/SophonFogSys/api/WipeData（POST）</center>
+# 清空数据/SophonFogSys/api/WipeData（POST）
 
 **功能描述**
 

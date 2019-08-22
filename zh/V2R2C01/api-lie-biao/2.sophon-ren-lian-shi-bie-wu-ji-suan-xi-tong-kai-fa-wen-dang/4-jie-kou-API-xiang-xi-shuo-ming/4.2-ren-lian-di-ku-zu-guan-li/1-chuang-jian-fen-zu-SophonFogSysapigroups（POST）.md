@@ -1,4 +1,4 @@
-# <center>创建分组/SophonFogSys/api/groups（POST）</center>
+# 创建分组/SophonFogSys/api/groups（POST）
 
 **功能描述**
 

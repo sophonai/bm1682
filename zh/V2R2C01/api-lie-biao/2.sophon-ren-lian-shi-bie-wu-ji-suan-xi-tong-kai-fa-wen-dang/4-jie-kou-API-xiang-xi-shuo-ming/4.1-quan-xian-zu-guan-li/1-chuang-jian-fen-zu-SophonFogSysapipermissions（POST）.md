@@ -1,4 +1,4 @@
-# <center>创建分组/SophonFogSys/api/permissions（POST）</center>
+# 创建分组/SophonFogSys/api/permissions（POST）
 
 **功能描述**
 

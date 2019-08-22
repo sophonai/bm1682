@@ -1,4 +1,4 @@
-# <center>人脸底库组管理API概述</center>
+# 人脸底库组管理API概述
 
 - [创建分组/SophonFogSys/api/groups（POST）](1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
 - [查询分组/SophonFogSys/api/groups（GET）](2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)

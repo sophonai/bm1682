@@ -1,4 +1,4 @@
-# <center>从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）</center>
+# 从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）
 
 **功能描述**
 

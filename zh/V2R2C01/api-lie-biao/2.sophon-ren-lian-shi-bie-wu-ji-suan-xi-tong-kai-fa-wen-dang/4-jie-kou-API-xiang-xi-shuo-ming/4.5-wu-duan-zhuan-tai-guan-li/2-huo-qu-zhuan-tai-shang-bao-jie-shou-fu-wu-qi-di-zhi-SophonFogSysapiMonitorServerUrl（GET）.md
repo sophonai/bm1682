@@ -1,4 +1,4 @@
-# <center>获取状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（GET）</center>
+# 获取状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（GET）
 
 **功能描述**
 

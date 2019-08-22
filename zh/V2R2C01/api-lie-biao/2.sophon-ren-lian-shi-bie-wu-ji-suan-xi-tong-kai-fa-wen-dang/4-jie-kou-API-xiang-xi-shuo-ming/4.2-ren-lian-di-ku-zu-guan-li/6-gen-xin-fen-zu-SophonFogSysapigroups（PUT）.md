@@ -1,4 +1,4 @@
-# <center>更新分组/SophonFogSys/api/groups（PUT）</center>
+# 更新分组/SophonFogSys/api/groups（PUT）
 
 **功能描述**
 

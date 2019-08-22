@@ -1,4 +1,4 @@
-# <center>V2.2.1</center>
+# V2.2.1
 
 - [SE3 AI迷你机说明书](V2R2C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md) 
 

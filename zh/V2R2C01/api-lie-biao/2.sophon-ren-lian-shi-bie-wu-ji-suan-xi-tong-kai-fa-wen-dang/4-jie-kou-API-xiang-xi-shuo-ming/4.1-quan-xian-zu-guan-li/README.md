@@ -1,4 +1,4 @@
-# <center>权限组管理API概述</center>
+# 权限组管理API概述
 
 - [创建分组/SophonFogSys/api/permissions（POST）](1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
 

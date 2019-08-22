@@ -1,4 +1,4 @@
-# <center>添加人员到分组/SophonFogSys/api/GroupUsers（PUT）</center>
+# 添加人员到分组/SophonFogSys/api/GroupUsers（PUT）
 
 **功能描述**
 

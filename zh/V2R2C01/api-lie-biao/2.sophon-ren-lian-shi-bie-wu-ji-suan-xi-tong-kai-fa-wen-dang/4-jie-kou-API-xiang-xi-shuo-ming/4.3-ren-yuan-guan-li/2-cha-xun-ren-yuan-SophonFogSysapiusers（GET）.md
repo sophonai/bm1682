@@ -1,4 +1,4 @@
-# <center>查询人员/SophonFogSys/api/users（GET）</center>
+# 查询人员/SophonFogSys/api/users（GET）
 
 **功能描述**
 

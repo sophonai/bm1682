@@ -2,7 +2,8 @@
   "plugins": [
     "expandable-chapters",
 	"auto-scroll-table",
-	"expandable-chapters-small"
+	"expandable-chapters-small",
+	"-sharing"
   ],
    "pluginsConfig": {
         "image-captions": {

@@ -1,4 +1,4 @@
-# <center>事件管理API概述</center>
+# 事件管理API概述
 
 - [设置事件反馈模式/SophonFogSys/api/GateControllerMode（POST）](1-she-zhi-shi-jian-fan-kui-mo-shi-SophonFogSysapiGateControllerMode（POST）.md)
 
