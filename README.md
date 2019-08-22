@@ -1,9 +1,11 @@
 #  <center>V2.2.1</center>
 
-<select id="pid" onchange=" window.location.href=this.value">
-<option grade="0" value="http://localhost:4000/zh/V2R2C01_README.html">版本</option>
-<option grade="1" value="http://localhost:4000/zh/V2R2C01_README.html">V2.2.1</option>
-<option grade="2" value="http://localhost:4000/zh/V2R2C01_README.html">V2.2.2</option>
+<!-- 获取选项的value，然后跳转到：当前域名+value -->
+
+<select id="pid" onchange="javascript:url=window.location.href+this.value;alert(window.location.href+this.value);window.location.href=url;">
+<option grade="0" value="zh/V2R2C01_README.html">版本</option>
+<option grade="1" value="zh/V2R2C01_README.html">V2.2.1</option>
+<option grade="2" value="zh/V2R2C01_README.html">V2.2.2</option>
 </select>
 
 
