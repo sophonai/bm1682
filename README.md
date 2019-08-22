@@ -1,4 +1,4 @@
-#  <center>V2.2.1</center>
+#  V2.2.1
 
 <!-- 获取选项的value，然后跳转到：当前域名+value -->
 
@@ -16,12 +16,13 @@
 
 ## 1 优势和特点
 
-![](zh\V2R2C01\imgs\se3_int_key.gif)
+![](zh/V2R2C01/imgs/se3_int_key.gif)
 
 ## 2 性能参数
 
-![1566470966941](zh\V2R2C01\imgs\SE3-detail.png)
+![1566470966941](zh/V2R2C01/imgs/SE3-detail.png)
 
 ## 3 三种应用场景
 
-![](zh\V2R2C01\imgs\se3_int_3.png)
+![](zh/V2R2C01/imgs/se3_int_3.png)
+
