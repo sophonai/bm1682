@@ -24,5 +24,5 @@
 
 ## 3 三种应用场景
 
-![](zh/V2R2C01/imgs/se3_int_3.png)
+![](zh/V2R2C01/imgs/se3_int_3.gif)
 
