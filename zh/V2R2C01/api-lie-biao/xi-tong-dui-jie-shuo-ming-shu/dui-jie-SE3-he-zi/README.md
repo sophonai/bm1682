@@ -34,14 +34,14 @@
 
 | 相关文档     | 说明  |
 | --------------- | ---------------------- |
-| [采集设备配置上报](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md) | 规定了SE3 AI迷你机想管理平台上报“配置采集设备”动作的过程及数据格式。<br />内容包括：操作（增加/删除），采集设备类型，ID等。 |
-| 设备状态信息上报 | 规定了SE3 AI迷你机向管理平台上报事件的过程及数据格式。<br />内容包括：实时事件和历史事件，格式，时机等。 |
+| [事件上报](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md) | 规定了SE3 AI迷你机向管理平台上报事件的过程及数据格式。<br />内容包括：实时事件和历史事件，格式，时机等。 |
 
-- **设备状态管理**
+- **设备管理**
 
 | 相关文档   | 说明   |
 | ---- | ------ |
-| [设备状态上报接口规范](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md) | 规定了SE3 AI迷你机向管理平台上报设备状态的过程及数据格式。<br />内容包括：SE3 AI迷你机，连接的采集设备的状态。 |
+| [采集设备配置上报](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md) | 规定了SE3 AI迷你机向管理平台上报设备状态的过程及数据格式。<br />内容包括：SE3 AI迷你机，连接的采集设备的状态。<br /> |
+| 采集设备状态上报 | 规定了SE3 AI迷你机想管理平台上报“配置采集设备”动作的过程及数据格式。<br />内容包括：操作（增加/删除），采集设备类型，ID等。 |
 
 - **系统管理**
 
