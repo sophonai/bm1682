@@ -10,7 +10,7 @@
 
 **请求参数（JSON格式）**
 
-| 参数             | 类型    | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| 参数             | 类型    |  默认值  | 选择 | 描述                                                         |  举例  |
 | :--------------- | :------ | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
 | group_name       | string  | 无                                  | 必选 | 分组名称                                                     | "default_group"                   |
 | identity_id      | list    | 无                                  | 必选 | 用户id列表[["user_id1","user_id2"](https://info.bitmain.vip:8443/pages/createpage.action?spaceKey=AIBOX&title="123345"%2C"23455"&linkCreation=true&fromPageId=59841178)] | ["001","002"]                     |

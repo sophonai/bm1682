@@ -10,7 +10,7 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| 参数                     | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| 参数                     | 类型   |  默认值  | 选择 | 描述                                                         |  举例  |
 | :----------------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
 | history_upload_event_url | list   |                                     | 必选 | 历史[事件服务器地址列表，格式： [https/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)[http\]://ip:port/api](http://ipport/)[ 。举例：http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogHistoryEvent |                                   |
 | history_need_reg_pic     | bool   |                                     | 可选 | 配置是否需要上传注册图片，默认为true，即需要上传注册图片     |                                   |

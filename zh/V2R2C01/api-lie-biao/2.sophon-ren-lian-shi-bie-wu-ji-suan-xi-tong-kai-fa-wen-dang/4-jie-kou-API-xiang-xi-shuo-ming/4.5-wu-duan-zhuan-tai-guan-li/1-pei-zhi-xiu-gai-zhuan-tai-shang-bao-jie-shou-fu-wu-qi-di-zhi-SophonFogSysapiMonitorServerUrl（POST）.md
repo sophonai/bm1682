@@ -10,7 +10,7 @@
 
 **请求参数（JSON格式，form-data格式）**
 
-| 参数               | 类型   | <font color="#dd0000">默认值</font> | 选择 | 描述                                                         | <font color="#dd0000">举例</font> |
+| 参数               | 类型   |  默认值  | 选择 | 描述                                                         |   举例   |
 | :----------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
 | monitor_server_url | string |                                     | 必选 | 状态管理服务器地址，类似[http://192.168.1.100:9828/EventServer/api/](http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent)SophonFogStatus |                                   |
 | content-type       | string |                                     | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data]。(目前只支持json格式) |                                   |
