@@ -2,6 +2,7 @@
   "plugins": [
     "expandable-chapters",
 	"auto-scroll-table",
+	"search-plus",
 	"expandable-chapters-small",
 	"-sharing"
   ],
