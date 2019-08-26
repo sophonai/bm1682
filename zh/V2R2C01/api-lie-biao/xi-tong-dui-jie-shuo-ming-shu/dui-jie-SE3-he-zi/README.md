@@ -26,7 +26,7 @@
 | 相关文档                                                     | 说明                                                         |
 | :----------------------------------------------------------- | ------------------------------------------------------------ |
 | [用户管理流程](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md) | 介绍SE3 AI迷你机和管理平台之间用户信息同步流程               |
-| [添加或更新用户](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md) | 管理平台向 SE3 AI 迷你机下发用户列表和用户详细信息。<br />本协议支持如下两种的数据同步方式：<br />        [消息中携带用户信息]()<br />        [独立接口获取用户详细信息]() |
+| [添加或更新用户](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md) | 管理平台向 SE3 AI 迷你机下发用户列表和用户详细信息。<br />本协议支持如下两种的数据同步方式：<br />        消息中携带用户信息<br />        [独立接口获取用户详细信息](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/6.-xiang-guan-li-ping-tai-huo-qu-xin-xi-de-jie-kou-ding-yi/6.1-huo-qu-yong-hu-xiang-xi-xin-xi-de-jie-kou.md) |
 | [删除用户](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md) | 管理平台告知SE3 AI迷你机删除一个或多个用户信息               |
 | [人脸图像检测](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md) | 管理平台请求SE3 AI迷你机对人脸图像做质量检测                 |
 
@@ -34,7 +34,8 @@
 
 | 相关文档     | 说明  |
 | --------------- | ---------------------- |
-| [事件上报接口规范](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md) | 规定了SE3 AI迷你机向管理平台上报事件的过程及数据格式。<br />内容包括：实时事件和历史事件，格式，时机等。 |
+| [采集设备配置上报](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md) | 规定了SE3 AI迷你机想管理平台上报“配置采集设备”动作的过程及数据格式。<br />内容包括：操作（增加/删除），采集设备类型，ID等。 |
+| 设备状态信息上报 | 规定了SE3 AI迷你机向管理平台上报事件的过程及数据格式。<br />内容包括：实时事件和历史事件，格式，时机等。 |
 
 - **设备状态管理**
 

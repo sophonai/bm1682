@@ -25,7 +25,7 @@
         - [事件上报接口规范](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
       - 设备管理
         - [采集设备配置上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
-        - [设备状态信息上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - 设备状态信息上报
       - 系统管理
         - [设备数据清理](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
       - 消息处理结果反馈
