@@ -9,7 +9,7 @@
     - [2.2 闸机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zha-ji-mo-shi/README.md)
     - [2.3 抓拍机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
     
-  - [3. 系统对接]()
+  - [3. 系统对接](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
     - [3.1 对接管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
     
     - [3.2 自建管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
@@ -21,8 +21,9 @@
         - [添加或更新用户](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
         - [删除用户](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
         - [人脸图像检测](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
-      - 事件管理
-        - [事件上报接口规范](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+      - [事件管理](zh/V2R2C01\api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [实时事件上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - 历史事件上报
       - 设备管理
         - [采集设备配置上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
         - 设备状态信息上报
