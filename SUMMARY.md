@@ -3,13 +3,17 @@
 - [版本](README.md)
 - [V2.2.1](zh/V2R2C01_README.md)
   - [1. SE3 AI迷你机说明书](zh/V2R2C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
+  
   - [2. 系统配置指南](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
     - [2.1 网络摄像机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/wang-luo-she-xiang-ji-mo-shi/README.md)
     - [2.2 闸机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zha-ji-mo-shi/README.md)
     - [2.3 抓拍机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
+    
   - [3. 系统对接]()
     
-    - [3.1 自建管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+    - [3.1 对接管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+    
+    - [3.2 自建管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
       
       - 连接管理
         - [建立连接流出](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
