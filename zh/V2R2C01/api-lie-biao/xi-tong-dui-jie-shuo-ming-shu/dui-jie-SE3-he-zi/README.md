@@ -15,7 +15,7 @@
 | 相关文档                                                     | 说明                                             |
 | ------------------------------------------------------------ | ------------------------------------------------ |
 | [建立连接流程](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md) | 介绍SE3 AI迷你机如何登录到管理平台               |
-| 登录接口                                                     | 规定SE3 AI迷你机登录请求参数，及管理平台返回参数 |
+| [接口登录](../../1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md) | 规定SE3 AI迷你机登录请求参数，及管理平台返回参数 |
 
 
 
