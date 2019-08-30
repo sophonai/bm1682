@@ -19,11 +19,12 @@
 | 5         | timestamp     |                | int32  | **必选** | 事件发生的时间戳                                             | 1565771454932                                         |
 | 6         | score         |                | float  | **必选** | 比对的分数                                                   | 0.23                                                  |
 | 7         | ext_data      |                | dict   | **必选** | 拓展数据字段，可迭代添加                                     |                                                       |
-|           |               | device_ip      | string | 可选     | 设备ip                                                       | "192.168.1.101"                                       |
-|           |               | ep_id          | string | 可选     | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。<br />ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 | "3714be15-09b3-41ec-b9ce-62b668e5fa32__192.168.1.101" |
-|           |               | spot_pic       | base64 | 可选     | 现场照片，可配置是否为大图                                   |                                                       |
-|           |               | person_type    | int    | 可选     | 1:员工（默认为员工，包括这个字段不存在的情况）<br />2: 访客<br />3: 黑名单<br />4：陌生人<br />5：VIP | 1                                                     |
-|           |               | device_type    | string | 可选     | 0：闸机，<br />1：抓拍机 <br />3：IPC 动态 <br />4：门禁 | 0                                                     |
+|           |               | device_ip      | string | **必选** | 设备ip                                                       | "192.168.1.101"                                       |
+|           |               | ep_id          | string | **必选** | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。<br />ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 | "3714be15-09b3-41ec-b9ce-62b668e5fa32__192.168.1.101" |
+|           |               | spot_pic       | base64 | **必选** | 现场照片，可配置是否为大图                                   |                                                       |
+| | | recognize_face | base | **必选** | 背景图中的每张人脸图 | |
+|           |               | person_type    | int    | **必选** | 1:员工（默认为员工，包括这个字段不存在的情况）<br />2: 访客<br />3: 黑名单<br />4：陌生人<br />5：VIP | 1                                                     |
+|           |               | device_type    | string | **必选** | 0：闸机，<br />1：抓拍机 <br />3：IPC 动态 <br />4：门禁 | 0                                                     |
 |           |               | grab_fiqa_info | dict   | **必选** | 其他设备模式内容为空（抓拍机模式下只有臻识抓拍机有效），返回抓拍机得人脸质量检测结果，详细请看示例 | {}                                                    |
 |           |               | box_fiqa_info  | dict   | **必选** | 其他设备模式内容为空(抓拍机模式有值)，返回AI BOX得人脸质量检测结果，详细请看示例 | {}                                                    |
 |           |               | dev_sno        | string | **必选** | SE3 AI迷你机唯一标识授权码                                   |                                                       |
@@ -53,7 +54,8 @@
 					'eye_dist': 82, 
 					'roll': 0, 
 					'sex': 1}, //性别0为男， 1为女
-			'spot_pic': 'xxxxx', 
+			'spot_pic': 'xxxxx',
+        	'recognize_face':"XXXXX",
 			'box_fiqa_info': {   //AI BOX端返回的图片质量检测信息
 					'age':4,
 					'sex':1, //性别0为男，1为女
