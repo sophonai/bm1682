@@ -41,7 +41,7 @@
     - [其它](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/README.md)
       - [SE3盒子迷你机管理](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/1-li-shi-ban-ben-xin-xi.md)
   
-  - 抓拍机设备
+  - [抓拍机设备]()
   
     - [API概述](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/API-gai-shu.md)
   
@@ -65,10 +65,9 @@
   
     - [GrabLiveListAPI [POST]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabLiveListAPI-POST.md)
   
-    - 
     - [GrabLiveListAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabLiveListAPI-GET.md)
   
-  - IPC设备
+  - [IPC设备]()
   
     - [API概述](zh/V2R2C01/api-lie-biao/ipc-she-bei/api-gai-shu.md)
   
@@ -80,7 +79,7 @@
   
     - [AddVideoDevice2 [POST]](zh/V2R2C01/api-lie-biao/ipc-she-bei/AddVideoDevice2-POST.md)
   
-  - 高级系统配置(WebUI）
+  - [高级系统配置(WebUI）]()
   
     - [API概述](zh/V2R2C01/api-lie-biao/webui/api-gai-shu.md)
   
