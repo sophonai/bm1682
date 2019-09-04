@@ -40,3 +40,99 @@
         - [清空数据/SophonFogSys/api/WipeData（POST）](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/4-qing-kong-shu-ju-SophonFogSysapiWipeData（POST）.md)
     - [其它](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/README.md)
       - [SE3盒子迷你机管理](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/1-li-shi-ban-ben-xin-xi.md)
+  
+  - 抓拍机设备
+  
+    - [API概述](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/API-gai-shu.md)
+  
+    - [GrabBasicInfoAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabBasicInfoAPI.md)
+  
+    - [GrabOnlineListAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabBasicInfoAPI-get.md)
+  
+    - [GrabOnlineListAPI [DELETE]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabOnlineListAPI-delete.md)
+  
+    - [GrabWhiteIpListAPI [POST]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabWhiteIpListAPI-POST.md)
+  
+    - [GrabWhiteIpListAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabWhiteIpListAPI-POST.md)
+  
+    - [GrabWhiteIpListAPI [DELETE]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabWhiteIpListAPI-DELETE.md)
+  
+    - [GrabInfoAPI  [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabInfoAPI-GET.md)
+  
+    - [GrabInfoAPI [PUT] ](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabInfoAPI-PUT.md)
+  
+    - [GrabRealDataAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabRealDataAPI-GET.md)
+  
+    - [GrabLiveListAPI [POST]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabLiveListAPI-POST.md)
+  
+    - 
+    - [GrabLiveListAPI [GET]](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/GrabLiveListAPI-GET.md)
+  
+  - IPC设备
+  
+    - [API概述](zh/V2R2C01/api-lie-biao/ipc-she-bei/api-gai-shu.md)
+  
+    - [AddVideoDevice [POST]](zh/V2R2C01/api-lie-biao/ipc-she-bei/AddVideoDevice-POST.md)
+  
+    - [RemoveVideoDevice [POST]](zh/V2R2C01/api-lie-biao/ipc-she-bei/RemoveVideoDevice-POST.md)
+  
+    - [EditVideoDevice [POST]](zh/V2R2C01/api-lie-biao/ipc-she-bei/EditVideoDevice-POST.md)
+  
+    - [AddVideoDevice2 [POST]](zh/V2R2C01/api-lie-biao/ipc-she-bei/AddVideoDevice2-POST.md)
+  
+  - 高级系统配置(WebUI）
+  
+    - [API概述](zh/V2R2C01/api-lie-biao/webui/api-gai-shu.md)
+  
+    - [Getcpuusageapi [GET]](zh/V2R2C01/api-lie-biao/webui/Getcpuusageapi-GET.md)
+  
+    - [Getnpuusageapi [GET]](zh/V2R2C01/api-lie-biao/webui/Getnpuusageapi-GET.md)
+  
+    - [Gettemperatureapi [GET]](zh/V2R2C01/api-lie-biao/webui/Gettemperatureapi-GET.md)
+  
+    - [Getboxipapi [GET]](zh/V2R2C01/api-lie-biao/webui/Getboxipapi-GET.md)
+  
+    - [Setboxipapi [POST]](zh/V2R2C01/api-lie-biao/webui/Setboxipapi-POST.md)
+  
+    - [Getboxhostnameapi [GET]](zh/V2R2C01/api-lie-biao/webui/Getboxhostnameapi-GET.md)
+  
+    - [Setboxhostnameapi [POST]](zh/V2R2C01/api-lie-biao/webui/Setboxhostnameapi-POST.md)
+  
+    - [Getipstatus [GET]](zh/V2R2C01/api-lie-biao/webui/Getipstatus-GET.md)
+  
+    - [CopydatatoSDcard [POST]](zh/V2R2C01/api-lie-biao/webui/CopydatatoSDcard-POST.md)
+  
+    - [Getdevicetype [GET] (C04)](zh/V2R2C01/api-lie-biao/webui/Getdevicetype-GET-C04.md)
+  
+    - [Getotasoftwareversion [GET] (C04)](zh/V2R2C01/api-lie-biao/webui/Getotasoftwareversion-GET-C04.md)
+  
+    - [Getotatype [GET] (C04)](zh/V2R2C01/api-lie-biao/webui/Getotatype-GET-C04.md)
+  
+    - [Setotatype [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/Setotatype-POST-C04.md)
+  
+    - [Getprivateotaurl [GET] (C04)](zh/V2R2C01/api-lie-biao/webui/Getprivateotaurl-GET-C04.md)
+  
+    - [Setprivateotaurl [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/Setprivateotaurl-POST-C04.md)
+  
+    - [Postotaupdate [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/Postotaupdate-POST-C04.md)
+  
+    - [LocalUpdate [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/LocalUpdate-POST-C04.md)
+  
+    - [publicOtaUrl [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/publicOtaUrl-POST-C04.md)
+  
+    - [DeviceSN [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/DeviceSN-POST-C04.md)
+  
+    - [Setboxtimeapi [POST] (C04)](zh/V2R2C01/api-lie-biao/webui/Setboxtimeapi-POST-C04.md)
+  
+    - [GetboxSystemtimeapi [Get] (C04)](zh/V2R2C01/api-lie-biao/webui/GetboxSystemtimeapi-Get-C04.md)
+  
+    - [GetboxSystemUptimeapi [Get]](zh/V2R2C01/api-lie-biao/webui/GetboxSystemUptimeapi-Get.md)
+  
+    - [GetboxFanSpeedapi [Get]](zh/V2R2C01/api-lie-biao/webui/GetboxFanSpeedapiGet.md)
+  
+    - [GetSystemMode[Get]](zh/V2R2C01/api-lie-biao/webui/GetSystemMode-Get.md)
+  
+    - [SetSystemMode[Post]](zh/V2R2C01/api-lie-biao/webui/SetSystemMode-Post.md)
+  
+  
+
