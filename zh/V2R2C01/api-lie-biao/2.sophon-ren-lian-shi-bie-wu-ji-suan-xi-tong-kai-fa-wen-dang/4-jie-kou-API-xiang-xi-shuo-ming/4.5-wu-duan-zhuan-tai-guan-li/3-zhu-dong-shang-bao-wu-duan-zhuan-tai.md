@@ -21,13 +21,14 @@
 | dev_sno          |                |              | string   | **必选** | SE3 AI迷你机登录管理平台用的授权码（由管理平台生成）         | "ZKZCPI000120190807142601"                                   |
 | gateway_ext_data |                |              | dict     | **必选** | 额外信息字段                                                 |                                                              |
 |                  | sw_version     |              | string   | **必选** | 中心节点版本信息                                             | 'build.date=2019年 08月 06日 星期二 17:42:49 CST\nBUILD TIME: 20190806_173257\nVERSION: V2R1C01\n' |
-|                  | sdk_version    |              | string   | 可选     | 算法版本                                                     | '1.1.56d1e91'                                                |
-|                  | gateway_mac    |              | string   | 可选     | SE3 AI迷你机Mac地址                                          | 'e0:a5:09:00:0e:6d'                                          |
-|                  | cpu_usage      |              | float    | 可选     | CPU使用率（百分比）                                          | 1.3                                                          |
-|                  | memory_size    |              | float    | 可选     | 内存大小，单位GB                                             | 1.55                                                         |
-|                  | memory_usage   |              | float    | 可选     | 内存使用率                                                   | 0.87                                                         |
-|                  | disk_size      |              | float    | 可选     | 磁盘大小，单位GB(/data分区)                                  | 10.39                                                        |
-|                  | disk_free_size |              | float    | 可选     | 磁盘数据分区剩余可用空间，单位为GB(/data分区)                | 9.39                                                         |
+|                  | sdk_version    |              | string   | **必选** | 算法版本                                                     | '1.1.56d1e91'                                                |
+|                  | gateway_mac    |              | string   | **必选** | SE3 AI迷你机Mac地址                                          | 'e0:a5:09:00:0e:6d'                                          |
+|                  | cpu_usage      |              | float    | **必选** | CPU使用率（百分比）                                          | 1.3                                                          |
+|                  | memory_size    |              | float    | **必选** | 内存大小，单位GB                                             | 1.55                                                         |
+|                  | memory_usage   |              | float    | **必选** | 内存使用率                                                   | 0.87                                                         |
+|                  | disk_size      |              | float    | **必选** | 磁盘大小，单位GB(/data分区)                                  | 10.39                                                        |
+|                  | disk_free_size |              | float    | **必选** | 磁盘数据分区剩余可用空间，单位为GB(/data分区)                | 9.39                                                         |
+| | temperature | | int | **必选** | SE3 AI迷你机主板温度 |  |
 | sub_devices      |                |              | list     | **必选** | 设备信息列表                                                 |                                                              |
 |                  | ep_id          |              | string   | **必选** | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。<br /> ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 | 'ZKZCPI000120190807142601__192.168.1.101'                    |
 |                  | ep_name        |              | string   | 可选     | 添加前端采集设备时设置的设备描述字符串                       | 'aaa'                                                        |
