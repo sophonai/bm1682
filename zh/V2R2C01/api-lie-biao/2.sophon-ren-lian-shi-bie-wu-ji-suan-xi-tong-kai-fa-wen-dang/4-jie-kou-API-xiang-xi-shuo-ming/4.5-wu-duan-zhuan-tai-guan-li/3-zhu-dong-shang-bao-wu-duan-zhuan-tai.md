@@ -28,7 +28,7 @@
 |                  | memory_usage   |              | float    | **必选** | 内存使用率                                                   | 0.87                                                         |
 |                  | disk_size      |              | float    | **必选** | 磁盘大小，单位GB(/data分区)                                  | 10.39                                                        |
 |                  | disk_free_size |              | float    | **必选** | 磁盘数据分区剩余可用空间，单位为GB(/data分区)                | 9.39                                                         |
-| | temperature | | int | **必选** | SE3 AI迷你机主板温度 |  |
+| | temperature | | int | **必选** | SE3 AI迷你机主板温度 | 37 |
 | sub_devices      |                |              | list     | **必选** | 设备信息列表                                                 |                                                              |
 |                  | ep_id          |              | string   | **必选** | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。<br /> ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 | 'ZKZCPI000120190807142601__192.168.1.101'                    |
 |                  | ep_name        |              | string   | 可选     | 添加前端采集设备时设置的设备描述字符串                       | 'aaa'                                                        |
