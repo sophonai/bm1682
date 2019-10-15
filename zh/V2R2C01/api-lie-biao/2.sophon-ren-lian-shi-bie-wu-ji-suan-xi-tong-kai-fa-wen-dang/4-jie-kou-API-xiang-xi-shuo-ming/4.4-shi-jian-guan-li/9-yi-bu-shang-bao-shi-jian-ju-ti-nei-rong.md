@@ -18,7 +18,8 @@
 | 4         | reg_pic       |                | base64 | 可选     | 注册的人脸底库，可配置去除                                   |                                                       |
 | 5         | timestamp     |                | int32  | **必选** | 事件发生的时间戳                                             | 1565771454932                                         |
 | 6         | score         |                | float  | **必选** | 比对的分数                                                   | 0.23                                                  |
-| 7         | ext_data      |                | dict   | **必选** | 拓展数据字段，可迭代添加                                     |                                                       |
+| 7 | want_action | | string | **必选** | 根据该字段判断需要进行的操作： ”0“：默认值， 不进行额外操作。 ”1001“：新的陌生人注册。 ”1002“：人脸注册底库更新。 | ”0“ |
+| 8       | ext_data      |                | dict   | **必选** | 拓展数据字段，可迭代添加                                     |                                                       |
 |           |               | device_ip      | string | **必选** | 设备ip                                                       | "192.168.1.101"                                       |
 |           |               | ep_id          | string | **必选** | 边缘节点ID，是指SE3 AI迷你机连接的采集设备的ID。<br />ID：dev_sno和IP的组合，用双下划线做连接。举例：AKOPKKKKK__192.168.1.25 | "3714be15-09b3-41ec-b9ce-62b668e5fa32__192.168.1.101" |
 |           |               | spot_pic       | base64 | **必选** | 现场照片，可配置是否为大图                                   |                                                       |
@@ -40,6 +41,7 @@
 	'group_name': 'default_group', 
 	'identity_id': '13028', 
 	'identity_name': 'stranger', 
+    "want_action":"0",
 	'timestamp': 1560408984678, 
 	'ext_data': {
 			'device_type': '1', 
