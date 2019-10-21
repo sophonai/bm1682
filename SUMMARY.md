@@ -33,14 +33,16 @@
         - [配置/修改历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/7-pei-zhi-xiu-gai-li-shi-shi-jian-shang-bao-jie-shou-fu-wu-qi-di-zhi-SophonFogSysapiHistoryEventUrl.md)
         - [获取历史事件上报接收服务器地址/SophonFogSys/api/HistoryEventUrl（GET）](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/8-huo-qu-li-shi-shi-jian-shang-bao-jie-shou-fu-wu-qi-di-zhi-SophonFogSysapiHistoryEventUrl（GET）.md)
         - [异步上报事件具体内容](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+        - [查询阈值配置空间](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/10-huo-qu-pei-zhi-yu-zhi-kong-jian.md)
+        - [配置阈值空间](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/11-pei-zhi-yu-zhi-kong-jian.md)
       - [4.5 雾端状态管理](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/README.md)
         - [配置/修改状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（POST）](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/1-pei-zhi-xiu-gai-zhuan-tai-shang-bao-jie-shou-fu-wu-qi-di-zhi-SophonFogSysapiMonitorServerUrl（POST）.md)
         - [获取状态上报接收服务器地址/SophonFogSys/api/MonitorServerUrl（GET）](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/2-huo-qu-zhuan-tai-shang-bao-jie-shou-fu-wu-qi-di-zhi-SophonFogSysapiMonitorServerUrl（GET）.md)
         - [主动上报雾端状态](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
         - [清空数据/SophonFogSys/api/WipeData（POST）](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/4-qing-kong-shu-ju-SophonFogSysapiWipeData（POST）.md)
-    - [其它](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/README.md)
+  - [其它](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/README.md)
       - [SE3盒子迷你机管理](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/qita/1-li-shi-ban-ben-xin-xi.md)
-  
+    
   - [抓拍机设备]()
   
     - [API概述](zh/V2R2C01/api-lie-biao/zhua-pai-ji-she-bei/API-gai-shu.md)
