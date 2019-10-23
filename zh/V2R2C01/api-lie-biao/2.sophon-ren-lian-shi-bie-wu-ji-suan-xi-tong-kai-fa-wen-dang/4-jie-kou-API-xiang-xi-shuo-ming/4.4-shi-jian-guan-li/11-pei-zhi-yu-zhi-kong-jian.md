@@ -12,17 +12,17 @@
 
 | 一级参数 | 类型   |   默认值   | 选择 | 描述                                                         |   举例   |
 | :------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
-| pretty_start_score | float |                                     | 必选 | 阈值起始值                              | 0.0 |
-| pretty_best_score | float |                                     | 必选 | 阈值最佳配置值                                     | 82.0 |
-| pretty_max_score | float |                                     | 必选 | 阈值最大值                     | 100.0 |
+| threshold_range | list |                                     | 必选 | 阈值映射空间                          | [0.0,50.0,100.0] |
 
 请求示例：
 
 ```json
 {
-    "pretty_best_score": 83.0,
-    "pretty_max_score": 100.0,
-    "pretty_start_score": 0.0
+    "threshold_range": [
+         0.0,
+         83.0,
+         100.0
+    ]
 }
 ```
 
@@ -32,21 +32,21 @@
 
 请求成功
 
-| 一级参数 | 二级参数           | 类型  | 描述           |
-| :------- | :----------------- | :---- | :------------- |
-| data     |                    |       |                |
-|          | pretty_start_score | float | 阈值起始值     |
-|          | pretty_best_score  | float | 阈值最佳配置值 |
-|          | pretty_max_score   | float | 阈值最大值     |
+| 一级参数 | 二级参数        | 类型 | 描述         |
+| :------- | :-------------- | :--- | :----------- |
+| data     |                 |      |              |
+|          | threshold_range | list | 阈值映射空间 |
 
 请求成功示例：
 
 ```json
 {
     "data": {
-        "pretty_start_score": 83.0,
-        "pretty_best_score": 0.0,
-        "pretty_max_score": 100.0
+        "threshold_range": [
+            0.0,
+            83.0,
+            100.0
+        ]
     }
 }
 ```
