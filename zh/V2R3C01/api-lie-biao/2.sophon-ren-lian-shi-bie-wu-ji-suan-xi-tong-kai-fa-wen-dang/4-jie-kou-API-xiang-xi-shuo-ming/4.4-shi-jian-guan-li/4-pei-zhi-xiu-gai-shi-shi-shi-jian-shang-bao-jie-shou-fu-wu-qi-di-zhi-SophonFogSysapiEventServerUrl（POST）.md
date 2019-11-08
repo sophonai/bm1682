@@ -14,17 +14,23 @@
 | :---------------- | :----- | ----------------------------------- | :--- | :----------------------------------------------------------- | --------------------------------- |
 | event_server_url  | list   |                                     | 必选 | 列表，事件服务器地址列表，格式： [https/[http\]://ip:port/api](http://ipport/) 。举例： http://192.168.1.100:9828/EventServer/api/SophonFogRelEvent |                                   |
 | real_need_reg_pic | bool   |                                     | 可选 | 配置是否需要上传注册的图片，默认为true,需要上传注册的图片    |                                   |
+| real_need_spot_pic | bool | | 可选 | 配置是否需要上传背景图，默认为true, 需要上传背景图 | |
+| real_need_recognize_face | bool | | 可选 | 配置是否需要上传背景图中的人脸图，默认为true，需要上传背景图中的人脸图 | |
+| real_need_send_all_person_type | bool | | 可选 | 配置是否需要上传陌生人事件， 默认为true，即需要上传陌生人事件 | |
 | content-type      | string |                                     | 必选 | 用来设置 requst 时以哪一种content type发送，参数为：[json,form-data] |                                   |
 
 **返回信息：**
 
 请求成功
 
-| 一级参数 | 二级参数          | 类型   | 描述             |
-| :------- | :---------------- | :----- | :--------------- |
-| data     | event_server_url  | list   | 设置的地址       |
-|          | real_need_reg_pic | bool   | 是否传送注册图片 |
-|          | content-type      | string | 参数类型         |
+| 一级参数 | 二级参数                       | 类型   | 描述                         |
+| :------- | :----------------------------- | :----- | :--------------------------- |
+| data     | event_server_url               | list   | 设置的地址                   |
+|          | real_need_reg_pic              | bool   | 是否传送注册图片             |
+|          | real_need_spot_pic             | bool   | 是否需要上传背景图           |
+|          | real_need_recognize_face       | bool   | 是否需要上传背景图中的人脸图 |
+|          | real_need_send_all_person_type | bool   | 是否需要上传陌生人事件       |
+|          | content-type                   | string | 参数类型                     |
 
 请求失败
 
