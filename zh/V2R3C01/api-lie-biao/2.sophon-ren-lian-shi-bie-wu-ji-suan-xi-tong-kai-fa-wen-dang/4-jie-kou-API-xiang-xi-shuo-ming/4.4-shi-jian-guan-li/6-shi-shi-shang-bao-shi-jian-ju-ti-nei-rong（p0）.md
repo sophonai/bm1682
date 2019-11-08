@@ -20,6 +20,7 @@ SE3 AI 迷你机会实时上报比对分数大于阈值的比对事件到管理�
 | score         |                | float    | **必选** | 比对的分数                                                   | 0.78                              |
 | ext_data      |                | dict     | **必选** | 拓展数据字段，可迭代添加                                     |                                   |
 |               | device_ip      | sting    | **必选** | 设备ip                                                       | "192.168.1.101"                   |
+| | recognize_face | base | 可选 | 背景图中的人脸图,默认上传 | "/9j/6QAEAAD/2xxD..." |
 |               | spot_pic       | base64   | 可选     | 现场照片，迎宾机模式下不传                                   | "/9j/6QAEAAD/2wBD..."             |
 |               | person_type    | int      | **必选** | 1：员工（默认为员工，包括这个字段不存在的情况）<br />2：访客<br />3：黑名单<br />4：陌生人<br />5：VIP | 1                                 |
 |               | device_type    | string   | **必选** | 0：闸机 <br />1：抓拍机 <br />3：IPC 动态 <br />4：门禁 | 0                                 |
@@ -41,7 +42,8 @@ SE3 AI 迷你机会实时上报比对分数大于阈值的比对事件到管理�
 
         },
         "device_type":"0",
-        "spot_pic":""
+        "spot_pic":"/9j/6QAEAAD/2xxD...",
+        "recognize_face":"/9j/6QAEAAD/2wBD..."
     },
     "identity_id":"666666",
     "score":0.6231614351272583,
