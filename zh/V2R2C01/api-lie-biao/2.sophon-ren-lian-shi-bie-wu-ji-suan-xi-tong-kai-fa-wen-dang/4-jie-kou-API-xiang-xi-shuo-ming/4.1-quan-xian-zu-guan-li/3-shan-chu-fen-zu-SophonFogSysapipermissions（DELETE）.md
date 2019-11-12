@@ -54,3 +54,4 @@
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
+
