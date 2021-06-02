@@ -18,12 +18,13 @@ http://192.168.1.180:5555/SophonFogSys/api/ImagePathStatusQuery
 
 请求成功
 
-| 一级参数 | 二级参数   | 类型   | 描述                 |
-| :------- | :--------- | :----- | :------------------- |
-| data     |            | dict   |                      |
-|          | image_path | string | 图片存储路径         |
-|          | available  | bool   | 是否有用             |
-|          | message    | string | 告警信息，无的话为"" |
+| 一级参数 | 二级参数        | 类型   | 描述                     |
+| :------- | :-------------- | :----- | :----------------------- |
+| data     |                 | dict   |                          |
+|          | image_path      | string | 图片存储路径             |
+|          | available       | bool   | 是否有用                 |
+|          | message         | string | 告警信息，无的话为""     |
+|          | english_message | sting  | 英文告警信息，无的话为"" |
 
 请求成功示例：
 
@@ -32,7 +33,8 @@ http://192.168.1.180:5555/SophonFogSys/api/ImagePathStatusQuery
     "data": {
         "image_path" : "/data2/events",
       	"available" : true,
-      	"message"  : ""
+      	"message"  : "",
+      	"english_message" : ""
     }
 }
 ```
