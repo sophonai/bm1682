@@ -955,6 +955,8 @@
           - [删除设备/SophonDevice/api/Devices（DELETE）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/4-shan-chu-she-bei-SophonDeviceapiDevices（DELETE）.md)
         - [8.数据管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/README.md)
           - [数据清理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/1-qinq-li-shu-ju.md)
+        - [9.图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/README.md)
+          - [图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/1-shu-ju-pan-zhuang-tai.md)
     - [4.9 系统管理](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
       - [4.9.1 基本信息 ](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
         - 1.主机名操作
