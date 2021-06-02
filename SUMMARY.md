@@ -993,6 +993,7 @@
           - [查询主机内存情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
         - 14.主机存储情况
           - [查询主机存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
+          - [查询主机外接硬盘存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_external_disk_info.md)
         - 15.定时重启功能
           - [获取定时重启配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
           - [设置定时重启](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
