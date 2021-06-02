@@ -15,9 +15,7 @@ http://192.168.1.180:5555/SophonFogSys/api/permissions
 | 参数            | 类型   |   默认值   | 选择 | 描述                                                      |   举例   |
 | :-------------- | :----- | ----------------------------------- | :--- | :-------------------------------------------------------- | --------------------------------- |
 | permission_name | string | 无                                  | 必选 | 权限组名称，不支持在字符串中间包含“,”，代码暂时不做校验。 | ”测试组“                          |
-| new_permission_name | string | 无 | 可选 | 新的权限组名称，支持在字符串中间包含“,”，代码暂时不做校验 | "新测试组" |
-| description     | string | 无                                  | 可选 | 权限组信息，可以为 “”                                     | ”该权限组为测试权限组“            |
-| info | dict | 无 | 可选 | 权限组的其他信息 |  |
+| description     | string | 无                                  | 必选 | 权限组信息，可以为 “”                                     | ”该权限组为测试权限组“            |
 
 请求示例：
 
@@ -26,7 +24,6 @@ http://192.168.1.180:5555/SophonFogSys/api/permissions
 请求body:
         {
             "permission_name":"测试组",
-            "new_permission_name":"新测试组",
             "description":"该权限组为测试权限组"
         }
 ```
@@ -38,7 +35,6 @@ http://192.168.1.180:5555/SophonFogSys/api/permissions
 | 一级参数 | 二级参数 | 三级参数    | 类型   | 描述                   |
 | :------- | :------- | :---------- | :----- | :--------------------- |
 | data     |          |             | dict   |                        |
-|          |          |             |        |                        |
 |          | info     |             | dict   |                        |
 |          |          | name        | string | 权限组名称             |
 |          |          | description | string | 权限组信息，内容可为‘’ |
@@ -48,13 +44,10 @@ http://192.168.1.180:5555/SophonFogSys/api/permissions
 ```json
 {
     "data": {
-        "identity_ids": [],
         "info": {
             "description": "该权限组为测试权限组",
-            "name": "新测试组"
-        },
-        "permission_id": "a168ee96-abdd-4757-8e75-894a7af19067",
-        "version": "V2"
+            "name": "测试组"
+        }
     }
 }
 ```

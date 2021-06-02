@@ -20,7 +20,7 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 | info        |                | dict   | 空                                  | 必选，可为空。 | 个人其他信息, 禁止进行员工工号的编辑                         |                                                              |
 |             | name           | string | 空                                  | 可选           | 人员名称                                                     | "小明"                                                       |
 |             | type           | int    | 空                                  | 可选           | 1:员工（默认为员工，包括这个字段不存在的情况）2: 访客3: 黑名单4: 陌生人5: VIP | 1                                                            |
-|             | permission_ids | list   | 空                                  | 可选       | 权限组列表（数组），如： ["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"] | ["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"] |
+|             | permission_ids | list   | 空                                  | 必选          | 权限组列表（数组），如： ["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"] | ["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"] |
 
 注意，如果想要和SE5 边缘计算盒中的LiteOS 中人员信息（更多配置）同步，info字段部分需要按照下面的要求进行：
 
@@ -28,6 +28,7 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 | -------- | -------- | ----------------- | ------ | ------ | ---- | ------------------ |
 | info     |          |                   | dict   | {}     | 必选 |                    |
 |          | name     |                   | string | 无     | 必选 | 姓名               |
+|          | user_id  |                   | string | 无     | 必选 | 用户ID             |
 |          | ext_info |                   | dict   | {}     | 可选 |                    |
 |          |          | mobile            | string | 无     | 可选 | 手机号             |
 |          |          | email             | string | 无     | 可选 | 电子邮箱           |
@@ -55,10 +56,11 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 ```json
 请求url: http://192.168.1.180:5555/SophonFogSys/api/users
 请求body:
-{
-  "info":{"name":"小明","type":1,"aaa":1,"permission_ids":["7fd609b5"]},
-  "identity_id":"111222",
-  "reg_photo":"data:image/png;base64,xxx"
+	{
+  "info":{"name":"小明","type":1,"aaa":1,"permission_ids":["f4add9c0-4212-4064-a045-					b6185cf00501","bb982244-ce4e-469d-ab5f-34314dd0c09a"]},
+  "identity_id":"001",
+  "reg_photo":""
+	
 }
 ```
 
@@ -110,4 +112,3 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 | error    | code     | int    | 请求错误码 |
 |          | message  | string | 错误描述   |
 |          | status   | string | 错误类型   |
-

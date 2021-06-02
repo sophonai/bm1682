@@ -36,6 +36,7 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 | -------- | -------- | ----------------- | ------ | ------ | ---- | ------------------ |
 | info     |          |                   | dict   | {}     | 必选 |                    |
 |          | name     |                   | string | 无     | 必选 | 姓名               |
+|          | user_id  |                   | string | 无     | 必选 | 用户ID             |
 |          | ext_info |                   | dict   | {}     | 可选 |                    |
 |          |          | mobile            | string | 无     | 可选 | 手机号             |
 |          |          | email             | string | 无     | 可选 | 电子邮箱           |
@@ -83,7 +84,7 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 | data     |             |                | dict   |      |                                                              |
 |          | identity_id |                | string | 必选 | 人员编号，可为工号之类的                                     |
 |          | reg_photo   |                | base64 | 必选 | 完成人脸的创建                                               |
-|          | group_name  |                | list   | 必选 | 直接完成分组的绑定,                                          |
+|          | group_name  |                | string | 必选 | 直接完成分组的绑定,                                          |
 |          | info        |                | dict   | 必选 | 个人其他信息                                                 |
 |          |             | name           | string | 必选 | 人员名称                                                     |
 |          |             | type           | int    | 必选 | 1:员工（默认为员工，包括这个字段不存在的情况）2: 访客3: 黑名单4：陌生人5:VIP |
@@ -95,7 +96,7 @@ http://192.168.1.180:5555/SophonFogSys/api/users
 ```json
 {
     "data": {
-        "group_name": ["default_group"],
+        "group_name": "default_group",
         "identity_id": "001",
         "info": {
             "name": "小王",
