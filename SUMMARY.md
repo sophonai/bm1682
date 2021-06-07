@@ -890,11 +890,10 @@
         - [1. 实时事件上报](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
         - [2. 历史事件上报](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
       - 3.2.5 设备管理
-        - [1.设备添加](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.3-she-bei-tian-jia.md)
-        - [2.设备更新](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.4-she-bei-geng-xin.md)
-        - [3.设备删除](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.5-she-bei-shan-chu.md)
-        - [1. 采集设备配置上报](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
-        - [2. 设备状态信息上报](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+        - [1.采集端设备添加](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.3-she-bei-tian-jia.md)
+        - [2.采集端设备更新](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.4-she-bei-geng-xin.md)
+        - [3.采集端设备删除](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.5-she-bei-shan-chu.md)
+        - [4. 采集端设备状态信息上报](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/cai-ji-duan-she-bei-shang-bao.md)
       - 3.2.6 系统管理
         - [1. 设备数据清理](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
         - [2. 设备配置控制](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
@@ -950,7 +949,7 @@
           - [底库图获取接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/15-di-ku-tu-huo-qu-jie-kou.md)
           - [以图搜图接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/16-yi-tu-sou-tu-jie-kou.md)
         - [6. 雾端状态管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
-          - [主动上报雾端状态](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+          - [主动上报雾端状态](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/cai-ji-duan-she-bei-shang-bao.md)
         - [7. 设备管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/README.md)
           - [增加设备/SophonDevice/api/Devices（POST）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/1-zeng-jia-she-bei-SophonDeviceapiDevices（POST）.md)
           - [查询设备/SophonDevice/api/Devices（GET）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/2-cha-xun-she-bei-SophonDeviceapiDevices（GET）.md)
@@ -1013,3 +1012,10 @@
           - [设置网络选择模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
           - [查询4G模块网络状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
           - [查询4G模块sim卡状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemSimStatus.md)
+        - 20.系统状态
+          - [获取系统状态上报配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_monitor_addr.md)
+          - [配置系统状态上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_monitor_upload_addr.md)
+          - [系统状态信息上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/xi-tong-zhuang-tai-shang-bao-nei-rong.md)
+
+
+
