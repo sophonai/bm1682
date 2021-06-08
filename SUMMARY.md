@@ -959,6 +959,9 @@
           - [数据清理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/1-qinq-li-shu-ju.md)
         - [9.图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/README.md)
           - [图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/1-shu-ju-pan-zhuang-tai.md)
+        - [10.登录管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/README.md)
+          - [主机登录](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/box_login.md)
+          - [密码更改](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/set_box_password.md)
     - [4.9 系统管理](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
       - [4.9.1 基本信息 ](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
         - 1.主机名操作
