@@ -22,7 +22,7 @@ http://192.168.1.180:5555/SophonDevice/api/Devices
 |              | device_key           |            |              | str    | N      | 必选 | 设备的地址                                                   | 闸机和抓拍机：设备ip视频流：视频url地址 |
 |              | is_start_rtmp        |            |              | bool   |        | 可选 | 是否开启rtmp码流                                             |                                         |
 |              | rtmp_address         |            |              | string |        | 可选 | rtmp码流地址                                                 |                                         |
-|              | device_type          |            |              | string | Y      | 必选 | 设备类型,<br />photo:闸机或者抓拍机, <br /><br />rtsp:视频流,<br />file:本地文件 | 0:闸机或者抓拍机3:视频流                |
+|              | device_type          |            |              | string | Y      | 必选 | 设备类型,<br />photo:闸机或者抓拍机, <br /><br />rtsp:视频流,<br />file:本地文件<br />gb28181:国标视频流 | 0:闸机或者抓拍机3:视频流                |
 |              | device_attr          |            |              | dict   | Y      | 可选 | 每个设备的添加字段                                           |                                         |
 |              |                      | actions    |              | dict   | N      | {}   | 视频流模式下的控制字段                                       |                                         |
 |              |                      |            | do_detect    | bool   |        |      | 是否做人脸检测                                               | 仅在视频流模式下使用                    |
