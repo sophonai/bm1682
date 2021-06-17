@@ -21,6 +21,14 @@ http://192.168.1.180:5555/SophonMatch/api/PictureMatch
 | device_ip           |          | string  |        | 必选 | device_ip为添加photo设备时候的设备ip，且必须优先添加设备后才能生效，添加设备可通过后台管理页面或是通过设备管理接口 |      |
 | compare_time        |          | time    |        | 可选 | event里面记录的比对时间，不送则使用当前时间（time.time()）   |      |
 | need_register_photo |          | boolean |        | 可选 | 是否需要注册的底库图，默认为False：不送                      |      |
+| min_face_size       |          | int     |        | 可选 | 能够识别的最小人脸size                                       |      |
+| liveness_mode       |          | string  |        | 可选 | 选择活体模式"liveness_off":关闭活体，"liveness_rgb":rgb活体检测，"liveness_rgb_ir":红外活体检测，这个时候需要送入ir_image_base64，不然会报错 |      |
+| support_stranger    |          | boolean |        | 可选 | 是否支持陌生人入库，如果不送则与盒子配置的一致               |      |
+| need_keep_info      |          | boolean |        | 可选 | 是否需要在比对未通过的情况下返回比对结果，默认为Flase        |      |
+| group_name          |          | string  |        | 可选 | 比对组名，如"default_group"等，如果送了这个参数，可以不送device_ip |      |
+| permission_name     |          | string  |        | 可选 | 比对权限组名，需要与group_name一起送，如果送了这个参数，可以不送device_ip |      |
+| with_attribute      |          | boolean |        | 可选 | 是否进行人员属性比对，为True则进行人员属性比对，默认为False  |      |
+| with_debug_info     |          | boolean |        | 可选 | 为True则返回这次比对使用的时间，默认为False                  |      |
 
 **请求示例：**
 
