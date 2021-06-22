@@ -42,6 +42,7 @@
 | | | feature |  | list | 可选 | 提取的人脸特征值数组 | |
 | | | box |  | list | 可选 | 人脸的box | |
 | | | hat |  | string | 可选 | 目前暂无该算法 | |
+| 16 | api_version |  | | string | 必选 | 接口版本，用于区分历史版本与当前版本 | 例: 1.0 |
 
 
 
@@ -96,7 +97,8 @@
     },
     "recognize_face":"",
     "dev_sno":"",
-    "person_type":4
+    "person_type":4,
+    "api_version":"1.0"
 }
 ```
 
