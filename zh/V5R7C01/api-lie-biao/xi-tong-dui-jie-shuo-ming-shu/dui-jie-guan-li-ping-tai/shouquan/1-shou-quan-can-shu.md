@@ -5,4 +5,4 @@
 管理员登录sophonsight后台，进入通行管理->SDK管理下，可以生成appKey和secret信息，用于开放API接口调用，如下图：
 
 
-![](../../../../imgs/shouquan-shou-quan-can-shu.png)
+![](../../../../../../imgs/shouquan-shou-quan-can-shu.png)

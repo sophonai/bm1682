@@ -5,7 +5,7 @@
 
   	如下图所示对接管理平台协议部分：
 	
-![](../../../../../imgs/box_platform.png)
+![](../../../../../imgs/sophonsight_openapi_business_chart.png)
 
 - **授权管理**
 
