@@ -962,6 +962,10 @@
         - [10.登录管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/README.md)
           - [主机登录](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/box_login.md)
           - [密码更改](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/set_box_password.md)
+        - [11.配置管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/README.md)
+          - [查询配置](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/1-cha-xun-pei-zhi-SophonConfigsapiDevices（GET）.md)
+          - [修改配置](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/2-xiu-gai-pei-zhi-SophonConfigapiConfigs（PUT）.md)
+          - [配置字段说明](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/3-pei-zhi-zi-duan-shuo-ming.md)
     - [4.9 系统管理](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
       - [4.9.1 基本信息 ](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
         - 1.主机名操作
