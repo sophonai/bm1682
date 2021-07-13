@@ -21,7 +21,7 @@
 |                  | ep_ip          |              | string   | **必选** | 边缘节点ip地址                                               | '192.168.1.101'                                              |
 |                  | ep_status      |              | string   | **必选** | 边缘节点状态[online, offline]                                |                                                              |
 |                  | ep_location    |              | string   | **必选** | 边缘节点绑定的location                                       | '95274d2c-0941-4d96-b032-ab200f81362c'                       |
-|                  | ep_type        |              | string   | **必选** | 0：闸机， <br />1：抓拍机 <br />3：IPC 动态 <br />4：门禁 | '1'                                                          |
+|                  | ep_type        |              | string   | **必选** | photo:闸机或者抓拍机, <br /><br />rtsp:视频流,<br />file:本地文件<br />gb28181:国标视频流 | 'rtsp'                                                       |
 |                  | ep_url         |              | string   | 可选     | 在视频流模式下有效，视频流url地址                            | 'rtsp://192.168.1.101:554/ch2'                               |
 
 
@@ -34,7 +34,7 @@
     "sub_devices": [{'ep_status': 'online', 
                    'ep_location': '95274d2c-0941-4d96-b032-ab200f81362c', 
                    'ep_url': 'rtsp://192.168.1.101:554/ch2', 
-                   'ep_type': '2', 
+                   'ep_type': 'rtsp', 
                    'ep_name': '', 
                    'ep_id': 'ZKZCPI000120190807142601__192.168.1.101', 
                    'ep_ip': '192.168.1.101'}], 
