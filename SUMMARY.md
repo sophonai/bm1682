@@ -971,57 +971,54 @@
         - 1.主机名操作
           - [查询主机名](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hostname.md)
           - [设置主机名](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_hostname.md)
-        - 2.主机登录及密码操作
-          - [主机登录](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/box_login.md)
-          - [密码更改](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_password.md)
-        - 3.ip地址操作
+        - 2.ip地址操作
           - [查询ip地址信息](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ip.md)
           - [设置IP地址](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ip.md)
-        - 4.cpu使用
+        - 3.cpu使用
           - [查询cpu使用](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_cpu_status.md)
-        - 5.tpu使用
+        - 4.tpu使用
           - [查询tpu使用](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_tpu_status.md)
-        - 6.主机温度
+        - 5.主机温度
           - [查询主机温度](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_temperature.md)
-        - 7.风扇转速
+        - 6.风扇转速
           - [查询风扇转速](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_fan_speed.md)
-        - 8.系统时间
+        - 7.系统时间
           - [获取时间模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time_mode.md)
           - [设置时间模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time_mode.md)
           - [查询系统时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time.md)
           - [手动设置系统时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time.md)
           - [查询ntp服务](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ntp_status.md)
           - [设置ntp服务](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ntp_service.md)
-        - 9.系统运行时间
+        - 8.系统运行时间
           - [查询系统运行时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_run_time.md)
-        - 10.系统版本和系统模式
+        - 9.系统版本和系统模式
           - [查询系统版本](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_version.md)
-        - 11.主机SN
+        - 10.主机SN
           - [查询主机SN](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_sn.md)
-        - 12.硬件版本信息
+        - 11.硬件版本信息
           - [查询产品型号和硬件版本](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hardware_version.md)
-        - 13.主机内存情况
+        - 12.主机内存情况
           - [查询主机内存情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
-        - 14.主机存储情况
+        - 13.主机存储情况
           - [查询主机存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
           - [查询主机外接硬盘存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_external_disk_info.md)
-        - 15.定时重启功能
+        - 14.定时重启功能
           - [获取定时重启配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
           - [设置定时重启](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
-        - 16.软件系统
+        - 15.软件系统
           - [获取软件系统模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_mode.md)
-        - 17.日志收集
+        - 16.日志收集
           - [日志收集获取](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_logs.md)
-        - 18.界面终端
+        - 17.界面终端
           - [界面终端访问](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ttyd.md)
-        - 19.LTE模块
+        - 18.LTE模块
           - [查询4G模块状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem.md)
           - [设置4G模块状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem.md)
           - [查询网络选择模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem_selection.md)
           - [设置网络选择模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
           - [查询4G模块网络状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
           - [查询4G模块sim卡状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemSimStatus.md)
-        - 20.系统状态
+        - 19.系统状态
           - [获取系统状态上报配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_monitor_addr.md)
           - [配置系统状态上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_monitor_upload_addr.md)
           - [系统状态信息上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/xi-tong-zhuang-tai-shang-bao-nei-rong.md)
