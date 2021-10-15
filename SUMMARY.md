@@ -1,0 +1,1026 @@
+# AIBOX
+
+- [版本](README.md)
+- [V2.2.1](zh/V2R2C01_README.md)
+  - [1. SE3 AI迷你机说明书](zh/V2R2C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
+  - [2. 设备配置指南](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+    - [2.1 网络摄像机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/wang-luo-she-xiang-ji-mo-shi/README.md)
+    - [2.2 闸机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zha-ji-mo-shi/README.md)
+    - [2.3 抓拍机模式](zh/V2R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
+  - [3. 系统对接](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1 对接管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 授权管理
+        - [1.授权参数生成](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.2 人员管理
+        - [1.组织更新](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.2 通行数据同步
+        - [1.上报方式](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.2 设备监控
+        - [1.设备状态上报](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.2 访客管理
+        - [1.访客登记](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V2R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V2R2C01\api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V2R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V2R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V2R2C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V2R2C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+    - [4.2 批量导入工具](zh/V2R2C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+- [V2.3.1](zh/V2R3C01_README.md)
+  - [1. SE3 AI迷你机说明书](zh/V2R3C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
+  - [2. 设备配置指南](zh/V2R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+    - [2.1 网络摄像机模式](zh/V2R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/wang-luo-she-xiang-ji-mo-shi/README.md)
+    - [2.2 闸机模式](zh/V2R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zha-ji-mo-shi/README.md)
+    - [2.3 抓拍机模式](zh/V2R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
+    - [2.4 网络摄像头、抓拍机选型及部署](zh/V2R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+  - [3. 系统对接](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1 对接管理平台](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 授权管理
+        - [1.授权参数生成](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.2 人员管理
+        - [1.组织更新](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.2 通行数据同步
+        - [1.上报方式](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.2 设备监控
+        - [1.设备状态上报](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.2 访客管理
+        - [1.访客登记](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V2R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V2R3C01\api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V2R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V2R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V2R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V2R3C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V2R3C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+    - [4.2 批量导入工具](zh/V2R3C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+- [V2.4.1](zh/V2R4C01_README.md)
+  - [1. SE3 AI迷你机说明书](zh/V2R4C01/api-lie-biao/SE3-AI-Mini-ji-shuo-ming-shu/README.md)
+  - [2. 设备配置指南](zh/V2R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+    - [2.1 网络摄像机模式](zh/V2R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/wang-luo-she-xiang-ji-mo-shi/README.md)
+    - [2.2 闸机模式](zh/V2R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zha-ji-mo-shi/README.md)
+    - [2.3 抓拍机模式](zh/V2R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/zhua-pai-ji-mo-shi/README.md)
+    - [2.4 网络摄像头、抓拍机选型及部署](zh/V2R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [2.5 迎宾电视APK操作指南](zh/V2R4C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+  - [3. 系统对接](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V2R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V2R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V2R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V2R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V2R4C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V2R4C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+    - [4.2 批量导入工具](zh/V2R4C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+- [V2.6.1](zh/V2R6C01_README.md)
+  - [1.AI计算盒SE5简介](zh/V2R6C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V2R6C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V2R6C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V2R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - [自建管理平台对接示意图](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/guan-li-ping-tai-dui-jie-liu-cheng.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - [3. 下载包](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+        - [4. FRP服务控制](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V2R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V2R6C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V2R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V2R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V2R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V2R6C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 扫描升级工具](zh/V2R6C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+  - [4.4 网络摄像头、抓拍机选型及部署](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.5 迎宾机机快速配置指南](zh/V2R6C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.6 闸机pad快速接入指南](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.7 人脸抓拍机快速接入指南](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+    - 4.8人脸识别雾计算系统开发文档
+      - [4.8.1人脸识别雾计算系统架构](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/2-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-jia-gou.md)
+      - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+      - [4.8.3人脸识别雾端API接口](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+        - [人脸注册比对流程示例](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/ren-lian-zhu-ce-liu-cheng.md)
+        - [1. 权限组管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/permissions（POST）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+          - [查询分组/SophonFogSys/api/permissions（GET）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+          - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+          - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        - [3. 人员管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+          - [创建人员SophonFogSys/api/users（POST）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+          - [查询人员/SophonFogSys/api/users（GET）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+          - [更新人员/SophonFogSys/api/users（PUT）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+          - [删除人员/SophonFogSys/api/users（DELETE）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+        - [4. 比对管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+          - [获取指定图片](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+          - [人脸检测](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+          - [人脸相似度比较](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+          - [图像质量检测](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+          - [人脸图片比对](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+        - [5. 事件管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+          - [实时上报事件内容获取](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+          - [异步上报事件具体内容](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+          - [主动查询接口](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/12-zhu-dong-cha-xun-jie-kou.md)
+          - [事件字段说明](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/13-shi-jian-zi-duan-shuo-ming.md)
+          - [现场图获取接口](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/14-xian-chang-tu-huo-qu-jie-kou.md)
+          - [底库图获取接口](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/15-di-ku-tu-huo-qu-jie-kou.md)
+          - [以图搜图接口](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/16-yi-tu-sou-tu-jie-kou.md)
+        - [6. 雾端状态管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+          - [主动上报雾端状态](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+        - [7. 设备管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/README.md)
+          - [增加设备/SophonDevice/api/Devices（POST）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/1-zeng-jia-she-bei-SophonDeviceapiDevices（POST）.md)
+          - [查询设备/SophonDevice/api/Devices（GET）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/2-cha-xun-she-bei-SophonDeviceapiDevices（GET）.md)
+          - [更新设备/SophonDevice/api/Devices（PUT）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/3-geng-xin-she-bei-SophonDeviceapiDevices（PUT）.md)
+          - [删除设备/SophonDevice/api/Devices（DELETE）](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/4-shan-chu-she-bei-SophonDeviceapiDevices（DELETE）.md)
+        - [8.数据管理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/README.md)
+          - [数据清理](zh/V2R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/1-qinq-li-shu-ju.md)
+    - [4.9 系统管理](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
+      - [4.9.1 基本信息 ](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
+        - 1.主机名操作
+          - [查询主机名](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hostname.md)
+          - [设置主机名](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_hostname.md)
+        - 2.主机登录及密码操作
+          - [主机登录](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/box_login.md)
+          - [密码更改](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_password.md)
+        - 3.ip地址操作
+          - [查询ip地址信息](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ip.md)
+          - [设置IP地址](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ip.md)
+        - 4.cpu使用
+          - [查询cpu使用](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_cpu_status.md)
+        - 5.tpu使用
+          - [查询tpu使用](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_tpu_status.md)
+        - 6.主机温度
+          - [查询主机温度](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_temperature.md)
+        - 7.风扇转速
+          - [查询风扇转速](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_fan_speed.md)
+        - 8.系统时间
+          - [获取时间模式](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time_mode.md)
+          - [设置时间模式](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time_mode.md)
+          - [查询系统时间](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time.md)
+          - [手动设置系统时间](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time.md)
+          - [查询ntp服务](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ntp_status.md)
+          - [设置ntp服务](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ntp_service.md)
+        - 9.系统运行时间
+          - [查询系统运行时间](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_run_time.md)
+        - 10.系统版本和系统模式
+          - [查询系统版本](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_version.md)
+        - 11.主机SN
+          - [查询主机SN](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_sn.md)
+        - 12.硬件版本信息
+          - [查询产品型号和硬件版本](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hardware_version.md)
+        - 13.主机内存情况
+          - [查询主机内存情况](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
+        - 14.主机存储情况
+          - [查询主机存储情况](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
+        - 15.定时重启功能
+          - [获取定时重启配置](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
+          - [设置定时重启](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
+        - 16.软件系统
+          - [获取软件系统模式](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_mode.md)
+        - 17.日志收集
+          - [日志收集获取](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_logs.md)
+        - 18.界面终端
+          - [界面终端访问](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ttyd.md)
+        - 19.LTE模块
+          - [查询4G模块状态](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem.md)
+          - [设置4G模块状态](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem.md)
+          - [查询网络选择模式](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem_selection.md)
+          - [设置网络选择模式](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
+          - [查询4G模块网络状态](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
+          - [查询4G模块sim卡状态](zh/V2R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemSimStatus.md)
+- [V5.2.1](zh/V5R2C01_README.md)
+  - [1. AI计算盒SE5简介](zh/V5R2C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V5R2C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V5R2C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V5R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V5R2C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V5R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V5R2C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V5R2C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V5R2C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V5R2C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V5R2C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V5R2C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V5R2C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 网络摄像头、抓拍机选型及部署](zh/V5R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.4 迎宾机机快速配置指南](zh/V5R2C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.5 闸机pad快速接入指南](zh/V5R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.6 人脸抓拍机快速接入指南](zh/V5R2C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+- [V5.3.1](zh/V5R3C01_README.md)
+  - [1. AI计算盒SE5简介](zh/V5R3C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V5R3C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V5R3C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V5R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V5R3C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - [3. 下载包](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+        - [4. FRP服务控制](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V5R3C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V5R3C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V5R3C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V5R3C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V5R3C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V5R3C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 扫描升级工具](zh/V5R3C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+    - [4.4 网络摄像头、抓拍机选型及部署](zh/V5R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.5 迎宾机机快速配置指南](zh/V5R3C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.6 闸机pad快速接入指南](zh/V5R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.7 人脸抓拍机快速接入指南](zh/V5R3C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+    - 4.8人脸识别雾计算系统开发文档
+      - [4.8.1人脸识别雾计算系统架构](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/2-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-jia-gou.md)
+      - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+      - [4.8.3人脸识别雾端API接口](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+        - [1. 权限组管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/permissions（POST）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+          - [查询分组/SophonFogSys/api/permissions（GET）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+          - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+          - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        - [2, 人脸底库组管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/groups（POST）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
+          - [查询分组/SophonFogSys/api/groups（GET）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
+          - [删除分组/SophonFogSys/api/groups（DELETE）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+          - [添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+          - [从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
+          - [更新分组SophonFogSysapigroups（PUT）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [3. 人员管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+          - [创建人员SophonFogSys/api/users（POST）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+          - [查询人员/SophonFogSys/api/users（GET）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+          - [更新人员/SophonFogSys/api/users（PUT）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+          - [删除人员/SophonFogSys/api/users（DELETE）](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+        - [4. 比对管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+          - [获取指定图片](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+          - [人脸检测](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+          - [人脸相似度比较](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+          - [图像质量检测](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+          - [人脸图片比对](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+        - [5. 事件管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+          - [实时上报事件内容获取](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+          - [异步上报事件具体内容](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+        - [6. 雾端状态管理](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+          - [主动上报雾端状态](zh/V5R3C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+- [V5.4.1](zh/V5R4C01_README.md)
+  - [1. AI计算盒SE5简介](zh/V5R4C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V5R4C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V5R4C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V5R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V5R4C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - [3. 下载包](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+        - [4. FRP服务控制](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V5R4C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V5R4C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V5R4C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V5R4C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V5R4C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V5R4C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 扫描升级工具](zh/V5R4C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+    - [4.4 网络摄像头、抓拍机选型及部署](zh/V5R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.5 迎宾机机快速配置指南](zh/V5R4C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.6 闸机pad快速接入指南](zh/V5R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.7 人脸抓拍机快速接入指南](zh/V5R4C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+    - 4.8人脸识别雾计算系统开发文档
+      - [4.8.1人脸识别雾计算系统架构](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/2-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-jia-gou.md)
+      - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+      - [4.8.3人脸识别雾端API接口](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+        - [1. 权限组管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/permissions（POST）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+          - [查询分组/SophonFogSys/api/permissions（GET）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+          - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+          - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        - [2, 人脸底库组管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/groups（POST）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
+          - [查询分组/SophonFogSys/api/groups（GET）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
+          - [删除分组/SophonFogSys/api/groups（DELETE）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+          - [添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+          - [从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
+          - [更新分组SophonFogSysapigroups（PUT）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [3. 人员管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+          - [创建人员SophonFogSys/api/users（POST）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+          - [查询人员/SophonFogSys/api/users（GET）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+          - [更新人员/SophonFogSys/api/users（PUT）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+          - [删除人员/SophonFogSys/api/users（DELETE）](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+        - [4. 比对管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+          - [获取指定图片](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+          - [人脸检测](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+          - [人脸相似度比较](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+          - [图像质量检测](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+          - [人脸图片比对](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+        - [5. 事件管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+          - [实时上报事件内容获取](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+          - [异步上报事件具体内容](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+        - [6. 雾端状态管理](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+          - [主动上报雾端状态](zh/V5R4C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+- [V5.5.1](zh/V5R5C01_README.md)
+    - [1.AI计算盒SE5简介](zh/V5R5C01/api-lie-biao/5.SE5Introduce/README.md)
+        - [1.1 开机向导](zh/V5R5C01/api-lie-biao/5.SE5Introduce/Guide.md)
+        - [1.2 LiteOS本地管理系统](zh/V5R5C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+      
+    - [2. 快速配置配置指南](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+      
+    - [3. 系统对接](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+      
+      - [3.1对接管理平台](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+          - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+          - 3.1.2 授权管理
+            - [1.授权参数生成](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+            - [2.授权认证介绍](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+          - 3.1.3 人员管理
+            - [1.组织更新](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+            - [2.人员更新](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+          - 3.1.3 通行数据同步
+            - [1.上报方式](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+            - [2.查询方式](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+            - [3.设备查询](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+          - 3.1.3 设备监控
+            - [1.设备状态上报](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+          - 3.1.3 访客管理
+            - [1.访客登记](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+      - [3.2 自建管理平台](zh/V5R5C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+        - 3.2.1 连接管理
+          - [1. 建立连接流程](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+          - [2. 登录接口](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+        - 3.2.2权限组管理
+          - [1. 权限组信息下放](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+        - 3.2.3 用户管理
+          - [1. 用户管理流程](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+          - [2. 添加或更新用户](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+          - [3. 删除用户](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+          - [4. 人脸图像检测](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+        - [3.2.4 事件管理](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+          - [1. 实时事件上报](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+          - [2. 历史事件上报](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+        - 3.2.5 设备管理
+          - [1. 采集设备配置上报](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+          - [2. 设备状态信息上报](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.5-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+        - 3.2.6 系统管理
+          - [1. 设备数据清理](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+          - [2. 设备配置控制](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+          - [3. 下载包](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+          - [4. FRP服务控制](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - 3.2.7 消息处理结果反馈
+          - [1. 消息处理结果反馈](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+          - [2. 状态码详细说明](zh/V5R5C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+      
+    - [4 配套工具](zh/V5R5C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+      
+      - [4.1 系统升级](zh/V5R5C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+          - [SE5 边缘计算盒升级指南](zh/V5R5C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+          - [SE3 AI迷你机升级指南](zh/V5R5C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+      - [4.2 批量导入工具](zh/V5R5C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+      - [4.3 扫描升级工具](zh/V5R5C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+      - [4.4 网络摄像头、抓拍机选型及部署](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+      - [4.5 迎宾机机快速配置指南](zh/V5R5C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+      - [4.6 闸机pad快速接入指南](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+      - [4.7 人脸抓拍机快速接入指南](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+      - 4.8人脸识别雾计算系统开发文档
+        - [4.8.1人脸识别雾计算系统架构](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/2-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-jia-gou.md)
+        - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+        - [4.8.3人脸识别雾端API接口](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+          - [1. 权限组管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+            - [创建分组/SophonFogSys/api/permissions（POST）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+            - [查询分组/SophonFogSys/api/permissions（GET）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+            - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+            - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+          - [2, 人脸底库组管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/README.md)
+            - [创建分组/SophonFogSys/api/groups（POST）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
+            - [查询分组/SophonFogSys/api/groups（GET）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
+            - [删除分组/SophonFogSys/api/groups（DELETE）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+            - [添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+            - [从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
+            - [更新分组SophonFogSysapigroups（PUT）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+          - [3. 人员管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+            - [创建人员SophonFogSys/api/users（POST）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+            - [查询人员/SophonFogSys/api/users（GET）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+            - [更新人员/SophonFogSys/api/users（PUT）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+            - [删除人员/SophonFogSys/api/users（DELETE）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+          - [4. 比对管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+            - [获取指定图片](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+            - [人脸检测](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+            - [人脸相似度比较](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+            - [图像质量检测](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+            - [人脸图片比对](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+          - [5. 事件管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+            - [实时上报事件内容获取](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+            - [异步上报事件具体内容](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+            - [主动查询接口](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/12-zhu-dong-cha-xun-jie-kou.md)
+            - [事件字段说明](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/13-shi-jian-zi-duan-shuo-ming.md)
+            - [现场图获取接口](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/14-xian-chang-tu-huo-qu-jie-kou.md)
+            - [底库图获取接口](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/15-di-ku-tu-huo-qu-jie-kou.md)
+            - [以图搜图接口](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/16-yi-tu-sou-tu-jie-kou.md)
+          - [6. 雾端状态管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+            - [主动上报雾端状态](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+          - [7. 设备管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/README.md)
+            - [增加设备/SophonDevice/api/Devices（POST）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/1-zeng-jia-she-bei-SophonDeviceapiDevices（POST）.md)
+            - [查询设备/SophonDevice/api/Devices（GET）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/2-cha-xun-she-bei-SophonDeviceapiDevices（GET）.md)
+            - [更新设备/SophonDevice/api/Devices（PUT）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/3-geng-xin-she-bei-SophonDeviceapiDevices（PUT）.md)
+            - [删除设备/SophonDevice/api/Devices（DELETE）](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/4-shan-chu-she-bei-SophonDeviceapiDevices（DELETE）.md)
+      - [4.9 系统管理](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
+          - [4.9.1 基本信息 ](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
+            - 1.主机名操作
+              - [查询主机名](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hostname.md)
+              - [设置主机名](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_hostname.md)
+            - 2.主机登录及密码操作
+              - [主机登录](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/box_login.md)
+              - [密码更改](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_password.md)
+            - 3.ip地址操作
+              - [查询ip地址信息](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ip.md)
+              - [设置IP地址](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ip.md)
+            - 4.cpu使用
+              - [查询cpu使用](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_cpu_status.md)
+            - 5.tpu使用
+              - [查询tpu使用](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_tpu_status.md)
+            - 6.主机温度
+              - [查询主机温度](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_temperature.md)
+            - 7.风扇转速
+              - [查询风扇转速](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_fan_speed.md)
+            - 8.系统时间
+              - [获取时间模式](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time_mode.md)
+              - [设置时间模式](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time_mode.md)
+              - [查询系统时间](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time.md)
+              - [手动设置系统时间](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time.md)
+              - [查询ntp服务](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ntp_status.md)
+              - [设置ntp服务](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ntp_service.md)
+            - 9.系统运行时间
+              - [查询系统运行时间](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_run_time.md)
+            - 10.系统版本
+              - [查询系统版本](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_version.md)
+            - 11.主机SN
+              - [查询主机SN](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_sn.md)
+            - 12.硬件版本信息
+              - [查询产品型号和硬件版本](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hardware_version.md)
+            - 13.主机内存情况
+              - [查询主机内存情况](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
+            - 14.主机存储情况
+              - [查询主机存储情况](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
+            - 15.定时重启功能
+              - [获取定时重启配置](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
+              - [设置定时重启](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
+            - 16.软件系统
+              - [获取软件系统模式](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_mode.md)
+            - 17.日志收集
+              - [日志收集获取](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_logs.md)
+            - 18.界面终端
+              - [界面终端访问](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ttyd.md)
+            - 19.LTE模块
+              - [查询4G模块状态](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem.md)
+              - [设置4G模块状态](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem.md)
+              - [查询网络选择模式](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem_selection.md)
+              - [设置网络选择模式](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
+              - [查询4G模块网络状态](zh/V5R5C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
+- [V5.6.1](zh/V5R6C01_README.md)
+  - [1.AI计算盒SE5简介](zh/V5R6C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V5R6C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V5R6C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V5R6C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - [自建管理平台对接示意图](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/guan-li-ping-tai-dui-jie-liu-cheng.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1. 采集设备配置上报](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.2-she-bei-cao-zuo-shi-jian-shang-bao.md)
+        - [2. 设备状态信息上报](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - [3. 下载包](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+        - [4. FRP服务控制](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V5R6C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V5R6C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V5R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V5R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V5R6C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V5R6C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 扫描升级工具](zh/V5R6C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+    - [4.4 网络摄像头、抓拍机选型及部署](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.5 迎宾机机快速配置指南](zh/V5R6C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.6 闸机pad快速接入指南](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.7 人脸抓拍机快速接入指南](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+    - 4.8人脸识别雾计算系统开发文档
+      - [4.8.1人脸识别雾计算系统架构](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/2-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-jia-gou.md)
+      - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+      - [4.8.3人脸识别雾端API接口](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+        - [人脸注册比对流程示例](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/ren-lian-zhu-ce-liu-cheng.md)
+        - [1. 权限组管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/permissions（POST）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+          - [查询分组/SophonFogSys/api/permissions（GET）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+          - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+          - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        - [2, 人脸底库组管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/groups（POST）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
+          - [查询分组/SophonFogSys/api/groups（GET）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
+          - [删除分组/SophonFogSys/api/groups（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+          - [添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+          - [从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
+          - [更新分组SophonFogSysapigroups（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [3. 人员管理](zh/V5R5C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+          - [创建人员SophonFogSys/api/users（POST）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+          - [查询人员/SophonFogSys/api/users（GET）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+          - [更新人员/SophonFogSys/api/users（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+          - [删除人员/SophonFogSys/api/users（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+        - [4. 比对管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+          - [获取指定图片](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+          - [人脸检测](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+          - [人脸相似度比较](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+          - [图像质量检测](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+          - [人脸图片比对](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+        - [5. 事件管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+          - [实时上报事件内容获取](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+          - [异步上报事件具体内容](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+          - [主动查询接口](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/12-zhu-dong-cha-xun-jie-kou.md)
+          - [事件字段说明](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/13-shi-jian-zi-duan-shuo-ming.md)
+          - [现场图获取接口](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/14-xian-chang-tu-huo-qu-jie-kou.md)
+          - [底库图获取接口](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/15-di-ku-tu-huo-qu-jie-kou.md)
+          - [以图搜图接口](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/16-yi-tu-sou-tu-jie-kou.md)
+        - [6. 雾端状态管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+          - [主动上报雾端状态](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/3-zhu-dong-shang-bao-wu-duan-zhuan-tai.md)
+        - [7. 设备管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/README.md)
+          - [增加设备/SophonDevice/api/Devices（POST）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/1-zeng-jia-she-bei-SophonDeviceapiDevices（POST）.md)
+          - [查询设备/SophonDevice/api/Devices（GET）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/2-cha-xun-she-bei-SophonDeviceapiDevices（GET）.md)
+          - [更新设备/SophonDevice/api/Devices（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/3-geng-xin-she-bei-SophonDeviceapiDevices（PUT）.md)
+          - [删除设备/SophonDevice/api/Devices（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/4-shan-chu-she-bei-SophonDeviceapiDevices（DELETE）.md)
+        - [8.数据管理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/README.md)
+          - [数据清理](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/1-qinq-li-shu-ju.md)
+    - [4.9 系统管理](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
+      - [4.9.1 基本信息 ](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
+        - 1.主机名操作
+          - [查询主机名](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hostname.md)
+          - [设置主机名](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_hostname.md)
+        - 2.主机登录及密码操作
+          - [主机登录](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/box_login.md)
+          - [密码更改](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_password.md)
+        - 3.ip地址操作
+          - [查询ip地址信息](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ip.md)
+          - [设置IP地址](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ip.md)
+        - 4.cpu使用
+          - [查询cpu使用](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_cpu_status.md)
+        - 5.tpu使用
+          - [查询tpu使用](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_tpu_status.md)
+        - 6.主机温度
+          - [查询主机温度](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_temperature.md)
+        - 7.风扇转速
+          - [查询风扇转速](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_fan_speed.md)
+        - 8.系统时间
+          - [获取时间模式](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time_mode.md)
+          - [设置时间模式](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time_mode.md)
+          - [查询系统时间](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time.md)
+          - [手动设置系统时间](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time.md)
+          - [查询ntp服务](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ntp_status.md)
+          - [设置ntp服务](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ntp_service.md)
+        - 9.系统运行时间
+          - [查询系统运行时间](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_run_time.md)
+        - 10.系统版本和系统模式
+          - [查询系统版本](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_version.md)
+        - 11.主机SN
+          - [查询主机SN](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_sn.md)
+        - 12.硬件版本信息
+          - [查询产品型号和硬件版本](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hardware_version.md)
+        - 13.主机内存情况
+          - [查询主机内存情况](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
+        - 14.主机存储情况
+          - [查询主机存储情况](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
+        - 15.定时重启功能
+          - [获取定时重启配置](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
+          - [设置定时重启](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
+        - 16.软件系统
+          - [获取软件系统模式](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_mode.md)
+        - 17.日志收集
+          - [日志收集获取](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_logs.md)
+        - 18.界面终端
+          - [界面终端访问](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ttyd.md)
+        - 19.LTE模块
+          - [查询4G模块状态](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem.md)
+          - [设置4G模块状态](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem.md)
+          - [查询网络选择模式](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem_selection.md)
+          - [设置网络选择模式](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
+          - [查询4G模块网络状态](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
+          - [查询4G模块sim卡状态](zh/V5R6C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemSimStatus.md)
+
+- [V5.7.1](zh/V5R7C01_README.md)
+  - [1.AI计算盒SE5简介](zh/V5R7C01/api-lie-biao/5.SE5Introduce/README.md)
+    - [1.1 开机向导](zh/V5R7C01/api-lie-biao/5.SE5Introduce/Guide.md)
+    - [1.2 LiteOS本地管理系统](zh/V5R7C01/api-lie-biao/5.SE5Introduce/LiteOS.md)
+  - [2. 快速配置配置指南](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/README.md)
+  - [3. 系统对接](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/README.md)
+    - [3.1对接管理平台](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/README.md)
+      - 3.1.1 [SOPHONSIGHT管理系统用户指导手册](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/guanlixitong/SOPHONSIGHT-guan-li-xi-tong-yong-hu-zhi-dao-shou-ce.md)
+      - 3.1.2 授权管理
+        - [1.授权参数生成](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/1-shou-quan-can-shu.md)
+        - [2.授权认证介绍](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shouquan/2-shou-quan-ren-zheng.md)
+      - 3.1.3 人员管理
+        - [1.组织更新](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/1-zu-zhi-geng-xin.md)
+        - [2.人员更新](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/renyuan/2-ren-yuan-geng-xin.md)
+      - 3.1.3 通行数据同步
+        - [1.上报方式](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/1-shang-bao-fang-shi.md)
+        - [2.查询方式](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/2-cha-xun-fang-shi.md)
+        - [3.设备查询](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/tongxing/3-she-bei-cha-xun.md)
+      - 3.1.3 设备监控
+        - [1.设备状态上报](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/shebei/1-she-bei-shang-bao.md)
+      - 3.1.3 访客管理
+        - [1.访客登记](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-guan-li-ping-tai/fangke/1-fang-ke-deng-ji.md)
+    - [3.2 自建管理平台](zh/V5R7C01/api-lie-biao/xi-tong-dui-jie-shuo-ming-shu/dui-jie-SE3-he-zi/README.md)
+      - [自建管理平台对接示意图](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/guan-li-ping-tai-dui-jie-liu-cheng.md)
+      - 3.2.1 连接管理
+        - [1. 建立连接流程](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.1-jian-li-lian-jie.md)
+        - [2. 登录接口](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/4.-guan-li-ping-tai-xi-tong-deng-lu-jie-kou.md)
+      - 3.2.2权限组管理
+        - [1. 权限组信息下放](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-quan-xian-zu-guan-li/3.1-quan-xian-zu-xin-xi-xia-fang.md)
+      - 3.2.3 用户管理
+        - [1. 用户管理流程](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/2.-mq-jie-kou-liu-cheng-shuo-ming/2.2-yong-hu-guan-li.md)
+        - [2. 添加或更新用户](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.1-tian-jia-huo-geng-xin-yong-hu-addusersplus.md)
+        - [3. 删除用户](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.1-yong-hu-guan-li-mq-xiao-xi/5.1.2-shan-chu-yong-hu-deleteusers.md)
+        - [4. 人脸图像检测](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.3-ren-lian-tu-pian-zhi-liang-jian-ce-fiqamq-xiao-xi.md)
+      - [3.2.4 事件管理](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/README.md)
+        - [1. 实时事件上报](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.1-shi-shi-shi-jian-shang-bao-nei-rong.md)
+        - [2. 历史事件上报](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/4-jie-kou-API-xiang-xi-shuo-ming/4.4-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+      - 3.2.5 设备管理
+        - [1.采集端设备添加](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.3-she-bei-tian-jia.md)
+        - [2.采集端设备更新](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.4-she-bei-geng-xin.md)
+        - [3.采集端设备删除](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/7.-she-bei-shang-bao-xin-xi-de-jie-kou-gui-fan/7.5-she-bei-shan-chu.md)
+        - [4. 采集端设备状态信息上报](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/cai-ji-duan-she-bei-shang-bao.md)
+      - 3.2.6 系统管理
+        - [1. 设备数据清理](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.2-she-bei-shu-ju-qing-li-mq-xiao-xi.md)
+        - [2. 设备配置控制](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+        - [3. 下载包](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.6-xia-zai-bao.md)
+        - [4. FRP服务控制](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.5-she-bei-pei-zhi-kong-zhi.md)
+      - 3.2.7 消息处理结果反馈
+        - [1. 消息处理结果反馈](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/5.-mq-ming-ling-jie-kou-xiang-xi-shuo-ming/5.4-mq-zhi-hang-jie-guo-fan-hui-jie-kou.md)
+        - [2. 状态码详细说明](zh/V5R7C01/api-lie-biao/1.-ji-yu-rabbit-mq-de-duan-yun-dui-jie-shuo-ming/3.-zhuang-tai-ma-xiang-xi-shuo-ming.md)
+  - [4 配套工具](zh/V5R7C01/api-lie-biao/4.pei-tao-gong-ju/README.md)
+    - [4.1 系统升级](zh/V5R7C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/README.md)
+      - [SE5 边缘计算盒升级指南](zh/V5R7C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE5_update.md)
+      - [SE3 AI迷你机升级指南](zh/V5R7C01/api-lie-biao/3.ke-hu-zhi-chi/3.update_support/SE3_update.md)
+    - [4.2 批量导入工具](zh/V5R7C01/api-lie-biao/4.pei-tao-gong-ju/pi-liang-dao-ru-gong-ju.md)
+    - [4.3 扫描升级工具](zh/V5R7C01/api-lie-biao/4.pei-tao-gong-ju/sao-miao-sheng-ji-gong-ju.md)
+    - [4.4 网络摄像头、抓拍机选型及部署](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/IPCandSetup.md)
+    - [4.5 迎宾机机快速配置指南](zh/V5R7C01/api-lie-biao/3.ke-hu-zhi-chi/2.ying-bin-xi-tong-kuai-su-she-zhi-zhi-nan/4.ying-bin-dian-shi-APK-cao-zuo-zhi-nan.md)
+    - [4.6 闸机pad快速接入指南](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zha-ji-mo-shi\README.md)
+    - [4.7 人脸抓拍机快速接入指南](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang\zhua-pai-ji-mo-shi\README.md)
+    - 4.8人脸识别雾计算系统开发文档
+      - [4.8.1人脸识别雾计算系统架构](zh/V6R1C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/1-gai-yao.md)
+      - [4.8.2 Sophon人脸识别雾计算系统和云端交互方式](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/3-Sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-he-yun-duan-jiao-hu-fang-shi.md)
+      - [4.8.3人脸识别雾端API接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/README.md)
+        - [人脸注册比对流程示例](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/ren-lian-zhu-ce-liu-cheng.md)
+        - [1. 权限组管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/permissions（POST）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapipermissions（POST）.md)
+          - [查询分组/SophonFogSys/api/permissions（GET）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapipermissions（GET）.md)
+          - [删除分组/SophonFogSys/api/permissions（DELETE）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapipermissions（DELETE）.md)
+          - [更新分组/SophonFogSys/api/permissions（PUT）](zh/V5R6C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.1-quan-xian-zu-guan-li/4-gen-xin-fen-zu-SophonFogSysapipermissions（PUT）.md)
+        - [2, 人脸底库组管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/README.md)
+          - [创建分组/SophonFogSys/api/groups（POST）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/1-chuang-jian-fen-zu-SophonFogSysapigroups（POST）.md)
+          - [查询分组/SophonFogSys/api/groups（GET）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/2-cha-xun-fen-zu-SophonFogSysapigroups（GET）.md)
+          - [删除分组/SophonFogSys/api/groups（DELETE）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/3-shan-chu-fen-zu-SophonFogSysapigroups（DELETE）.md)
+          - [添加人员到分组/SophonFogSys/api/GroupUsers（PUT）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/4-tian-jia-ren-yuan-dao-fen-zu-SophonFogSysapiGroupUsers（PUT）.md)
+          - [从分组删除人员/SophonFogSys/api/GroupUsers（DELETE）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/5-cong-fen-zu-shan-chu-ren-yuan-SophonFogSysapiGroupUsers（DELETE）.md)
+          - [更新分组SophonFogSysapigroups（PUT）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.2-ren-lian-di-ku-zu-guan-li/6-gen-xin-fen-zu-SophonFogSysapigroups（PUT）.md)
+        - [3. 人员管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/README.md)
+          - [创建人员SophonFogSys/api/users（POST）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/1-chuang-jian-ren-yuan-SophonFogSysapiusers（POST）.md)
+          - [查询人员/SophonFogSys/api/users（GET）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/2-cha-xun-ren-yuan-SophonFogSysapiusers（GET）.md)
+          - [更新人员/SophonFogSys/api/users（PUT）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/3-geng-xin-ren-yuan-SophonFogSysapiusers（PUT）.md)
+          - [删除人员/SophonFogSys/api/users（DELETE）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.3-ren-yuan-guan-li/4-shan-chu-ren-yuan-SophonFogSysapiusers（DELETE）.md)
+        - [4. 比对管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/README.md)
+          - [获取指定图片](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/1-huo-qu-zhi-ding-tu-pian.md)
+          - [人脸检测](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/2-ren-lian-jian-ce.md)
+          - [人脸相似度比较](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/3-ren-lian-xiang-si-du-bi-jiao.md)
+          - [图像质量检测](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/4-tu-xiang-zhi-liang-jian-ce.md)
+          - [人脸图片比对](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.4-bi-dui-guan-li/5-ren-lian-tu-pian-bi-dui.md)
+        - [5. 事件管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/README.md)
+          - [实时上报事件内容获取](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/6-shi-shi-shang-bao-shi-jian-ju-ti-nei-rong（p0）.md)
+          - [异步上报事件具体内容](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/9-yi-bu-shang-bao-shi-jian-ju-ti-nei-rong.md)
+          - [主动查询接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/12-zhu-dong-cha-xun-jie-kou.md)
+          - [事件字段说明](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/13-shi-jian-zi-duan-shuo-ming.md)
+          - [现场图获取接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/14-xian-chang-tu-huo-qu-jie-kou.md)
+          - [底库图获取接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/15-di-ku-tu-huo-qu-jie-kou.md)
+          - [以图搜图接口](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.5-shi-jian-guan-li/16-yi-tu-sou-tu-jie-kou.md)
+        - [6. 雾端状态管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/README.md)
+          - [主动上报雾端状态](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.6-wu-duan-zhuan-tai-guan-li/cai-ji-duan-she-bei-shang-bao.md)
+        - [7. 设备管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/README.md)
+          - [增加设备/SophonDevice/api/Devices（POST）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/1-zeng-jia-she-bei-SophonDeviceapiDevices（POST）.md)
+          - [查询设备/SophonDevice/api/Devices（GET）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/2-cha-xun-she-bei-SophonDeviceapiDevices（GET）.md)
+          - [更新设备/SophonDevice/api/Devices（PUT）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/3-geng-xin-she-bei-SophonDeviceapiDevices（PUT）.md)
+          - [删除设备/SophonDevice/api/Devices（DELETE）](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.7-she-bei-guan-li/4-shan-chu-she-bei-SophonDeviceapiDevices（DELETE）.md)
+        - [8.数据管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/README.md)
+          - [数据清理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.8-shu-ju-guan-li/1-qinq-li-shu-ju.md)
+        - [9.图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/README.md)
+          - [图片存储路径状态查询](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.9-shu-ju-pan-zhuang-tai/1-shu-ju-pan-zhuang-tai.md)
+        - [10.登录管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/README.md)
+          - [主机登录](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/box_login.md)
+          - [密码更改](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.10-deng-lu-guan-li/set_box_password.md)
+        - [11.配置管理](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/README.md)
+          - [查询配置](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/1-cha-xun-pei-zhi-SophonConfigsapiDevices（GET）.md)
+          - [修改配置](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/2-xiu-gai-pei-zhi-SophonConfigapiConfigs（PUT）.md)
+          - [配置字段说明](zh/V5R7C01/api-lie-biao/2.sophon-ren-lian-shi-bie-wu-ji-suan-xi-tong-kai-fa-wen-dang/5-gong-yong-jie-kou-shuo-ming/5.11-pei-zhi-guan-li/3-pei-zhi-zi-duan-shuo-ming.md)
+    - [4.9 系统管理](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/README.md)
+      - [4.9.1 基本信息 ](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/README.md)
+        - 1.主机名操作
+          - [查询主机名](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hostname.md)
+          - [设置主机名](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_hostname.md)
+        - 2.主机登录及密码操作
+          - [主机登录](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/box_login.md)
+          - [密码更改](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_password.md)
+        - 3.ip地址操作
+          - [查询ip地址信息](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ip.md)
+          - [设置IP地址](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ip.md)
+        - 4.cpu使用
+          - [查询cpu使用](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_cpu_status.md)
+        - 5.tpu使用
+          - [查询tpu使用](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_tpu_status.md)
+        - 6.主机温度
+          - [查询主机温度](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_temperature.md)
+        - 7.风扇转速
+          - [查询风扇转速](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_fan_speed.md)
+        - 8.系统时间
+          - [获取时间模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time_mode.md)
+          - [设置时间模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time_mode.md)
+          - [查询系统时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_time.md)
+          - [手动设置系统时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_time.md)
+          - [查询ntp服务](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ntp_status.md)
+          - [设置ntp服务](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_ntp_service.md)
+        - 9.系统运行时间
+          - [查询系统运行时间](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_run_time.md)
+        - 10.系统版本和系统模式
+          - [查询系统版本](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_version.md)
+        - 11.主机SN
+          - [查询主机SN](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_sn.md)
+        - 12.硬件版本信息
+          - [查询产品型号和硬件版本](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_hardware_version.md)
+        - 13.主机内存情况
+          - [查询主机内存情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_memory_info.md)
+        - 14.主机存储情况
+          - [查询主机存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_disk_info.md)
+          - [查询主机外接硬盘存储情况](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_external_disk_info.md)
+        - 15.定时重启功能
+          - [获取定时重启配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_restart_time.md)
+          - [设置定时重启](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_box_restart_time.md)
+        - 16.软件系统
+          - [获取软件系统模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_mode.md)
+        - 17.日志收集
+          - [日志收集获取](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_logs.md)
+        - 18.界面终端
+          - [界面终端访问](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_box_ttyd.md)
+        - 19.LTE模块
+          - [查询4G模块状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem.md)
+          - [设置4G模块状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem.md)
+          - [查询网络选择模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_ltemodem_selection.md)
+          - [设置网络选择模式](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_ltemodem_selection.md)
+          - [查询4G模块网络状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemConnection.md)
+          - [查询4G模块sim卡状态](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_lteModemSimStatus.md)
+        - 20.系统状态
+          - [获取系统状态上报配置](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/get_monitor_addr.md)
+          - [配置系统状态上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/set_monitor_upload_addr.md)
+          - [系统状态信息上报](zh/V5R7C01/api-lie-biao/xi-tong-pei-zhi-zhi-nang/xi-tong-guan-li/ji-ben-xin-xi/xi-tong-zhuang-tai-shang-bao-nei-rong.md)
+
+
+
+
+
+

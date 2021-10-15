@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "expandable-chapters",
+    "auto-scroll-table",
+    "search-plus",
+    "auto-scroll-table",
+    "extra-html",
+    "splitter",
+    "popup",
+    "expandable-chapters-small",
+    "-sharing"
+  ],
+   "pluginsConfig": {
+        "image-captions": {
+          "caption": "Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+      }
+    }
+}
